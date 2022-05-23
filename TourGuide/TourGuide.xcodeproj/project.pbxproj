@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF28E29D283BA257003CB2F1 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF28E29C283BA257003CB2F1 /* Review.swift */; };
+		DF28E2A1283BAB79003CB2F1 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF28E2A0283BAB79003CB2F1 /* CommentTableViewCell.swift */; };
+		DF32F747283A92A70067281B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32F746283A92A70067281B /* RatingControl.swift */; };
+		DF32F749283AA26E0067281B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32F748283AA26E0067281B /* ReviewViewController.swift */; };
+		DF963529283A84EB002913E0 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF963528283A84EB002913E0 /* ReviewTableViewController.swift */; };
+		DFF42D4B283A6931006B7A55 /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF42D4A283A6931006B7A55 /* AddScheduleViewController.swift */; };
 		DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */; };
 		DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */; };
 		DFFCB6BE2839E62F00B58DEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6BD2839E62F00B58DEA /* ViewController.swift */; };
@@ -36,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF28E29C283BA257003CB2F1 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		DF28E2A0283BAB79003CB2F1 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		DF32F746283A92A70067281B /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		DF32F748283AA26E0067281B /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		DF963528283A84EB002913E0 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
+		DFF42D4A283A6931006B7A55 /* AddScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
 		DFFCB6B62839E62F00B58DEA /* TourGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +88,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF28E29A283BA1D3003CB2F1 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				DF32F746283A92A70067281B /* RatingControl.swift */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		DF28E29B283BA22C003CB2F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF28E29C283BA257003CB2F1 /* Review.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DF28E29F283BAB4B003CB2F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF963528283A84EB002913E0 /* ReviewTableViewController.swift */,
+				DFF42D4A283A6931006B7A55 /* AddScheduleViewController.swift */,
+				DF32F748283AA26E0067281B /* ReviewViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		DFFCB6AD2839E62F00B58DEA = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +139,10 @@
 			children = (
 				DFFCB6BD2839E62F00B58DEA /* ViewController.swift */,
 				DFFCB6BF2839E62F00B58DEA /* Main.storyboard */,
+				DF28E2A0283BAB79003CB2F1 /* CommentTableViewCell.swift */,
+				DF28E29F283BAB4B003CB2F1 /* Controllers */,
+				DF28E29B283BA22C003CB2F1 /* Models */,
+				DF28E29A283BA1D3003CB2F1 /* Controls */,
 				DFFCB6E92839E65400B58DEA /* SystemFiles */,
 			);
 			path = TourGuide;
@@ -267,8 +309,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFFCB6BE2839E62F00B58DEA /* ViewController.swift in Sources */,
+				DF28E29D283BA257003CB2F1 /* Review.swift in Sources */,
 				DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */,
+				DF32F749283AA26E0067281B /* ReviewViewController.swift in Sources */,
+				DF28E2A1283BAB79003CB2F1 /* CommentTableViewCell.swift in Sources */,
+				DF963529283A84EB002913E0 /* ReviewTableViewController.swift in Sources */,
 				DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */,
+				DF32F747283A92A70067281B /* RatingControl.swift in Sources */,
+				DFF42D4B283A6931006B7A55 /* AddScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
