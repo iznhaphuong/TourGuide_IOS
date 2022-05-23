@@ -10,9 +10,16 @@ import UIKit
 class TourTableViewController: UITableViewController {
     //MARK: Properties
     var tourists = [Tour]()
+    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Side Menu
+        navigationController?.navigationBar.tintColor = .black
+
+        sideMenuBtn.target = revealViewController()
+        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
 
         // Create
         let tourImage = UIImage(named: "default")

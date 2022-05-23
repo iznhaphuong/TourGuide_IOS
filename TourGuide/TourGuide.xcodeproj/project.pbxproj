@@ -15,9 +15,13 @@
 		4C6E35CD283A487B003D1D6B /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35CC283A487B003D1D6B /* TourTableViewCell.swift */; };
 		4C6E35CF283A48B6003D1D6B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35CE283A48B6003D1D6B /* RatingControl.swift */; };
 		4C6E35D1283A4986003D1D6B /* TourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */; };
+		4CE9E48D283BCFCF00895909 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */; };
+		4CE9E48F283BCFE200895909 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E48E283BCFE200895909 /* MainViewController.swift */; };
+		4CE9E491283BD1B900895909 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E490283BD1B900895909 /* SideMenuModel.swift */; };
+		4CE9E497283BD29700895909 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E496283BD29700895909 /* SideMenuCell.swift */; };
+		4CE9E499283BD33700895909 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9E498283BD33700895909 /* SideMenuCell.xib */; };
 		DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */; };
 		DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */; };
-		DFFCB6BE2839E62F00B58DEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6BD2839E62F00B58DEA /* ViewController.swift */; };
 		DFFCB6C12839E62F00B58DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFCB6BF2839E62F00B58DEA /* Main.storyboard */; };
 		DFFCB6C32839E63000B58DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFCB6C22839E63000B58DEA /* Assets.xcassets */; };
 		DFFCB6C62839E63000B58DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFCB6C42839E63000B58DEA /* LaunchScreen.storyboard */; };
@@ -52,10 +56,14 @@
 		4C6E35CC283A487B003D1D6B /* TourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
 		4C6E35CE283A48B6003D1D6B /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewController.swift; sourceTree = "<group>"; };
+		4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		4CE9E48E283BCFE200895909 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4CE9E490283BD1B900895909 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		4CE9E496283BD29700895909 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		4CE9E498283BD33700895909 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
 		DFFCB6B62839E62F00B58DEA /* TourGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DFFCB6BD2839E62F00B58DEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DFFCB6C02839E62F00B58DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFFCB6C22839E63000B58DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFFCB6C52839E63000B58DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,6 +119,25 @@
 			name = DataModels;
 			sourceTree = "<group>";
 		};
+		4CE9E48B283BCF9500895909 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4CE9E493283BD1FF00895909 /* Cell */,
+				4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */,
+				4CE9E490283BD1B900895909 /* SideMenuModel.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		4CE9E493283BD1FF00895909 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4CE9E496283BD29700895909 /* SideMenuCell.swift */,
+				4CE9E498283BD33700895909 /* SideMenuCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		DFFCB6AD2839E62F00B58DEA = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +164,9 @@
 				4C427C27283A98A9002B2E4F /* HomeTableViewController.swift */,
 				4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */,
 				4C427C2D283AA278002B2E4F /* ProfileViewController.swift */,
-				DFFCB6BD2839E62F00B58DEA /* ViewController.swift */,
+				4CE9E48E283BCFE200895909 /* MainViewController.swift */,
 				DFFCB6BF2839E62F00B58DEA /* Main.storyboard */,
+				4CE9E48B283BCF9500895909 /* SideMenu */,
 				4C6E35C9283A474E003D1D6B /* DataModels */,
 				4C6E35C8283A471D003D1D6B /* Controls */,
 				DFFCB6E92839E65400B58DEA /* SystemFiles */,
@@ -282,6 +310,7 @@
 				DFFCB6C62839E63000B58DEA /* LaunchScreen.storyboard in Resources */,
 				DFFCB6C32839E63000B58DEA /* Assets.xcassets in Resources */,
 				DFFCB6C12839E62F00B58DEA /* Main.storyboard in Resources */,
+				4CE9E499283BD33700895909 /* SideMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +336,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C427C28283A98A9002B2E4F /* HomeTableViewController.swift in Sources */,
-				DFFCB6BE2839E62F00B58DEA /* ViewController.swift in Sources */,
+				4CE9E497283BD29700895909 /* SideMenuCell.swift in Sources */,
+				4CE9E48F283BCFE200895909 /* MainViewController.swift in Sources */,
 				DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */,
 				DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */,
+				4CE9E48D283BCFCF00895909 /* SideMenuViewController.swift in Sources */,
 				4C427C2A283A994F002B2E4F /* Home.swift in Sources */,
 				4C6E35CB283A4767003D1D6B /* Tour.swift in Sources */,
 				4C427C2E283AA278002B2E4F /* ProfileViewController.swift in Sources */,
@@ -317,6 +348,7 @@
 				4C6E35CF283A48B6003D1D6B /* RatingControl.swift in Sources */,
 				4C6E35CD283A487B003D1D6B /* TourTableViewCell.swift in Sources */,
 				4C6E35D1283A4986003D1D6B /* TourTableViewController.swift in Sources */,
+				4CE9E491283BD1B900895909 /* SideMenuModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
