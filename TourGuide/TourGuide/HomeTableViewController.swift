@@ -9,10 +9,20 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
     //MARK: Properties
+    @IBOutlet var sideMenuBtn: UIBarButtonItem!
+    
+    
     var homes = [Home]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // Side Menu
+        navigationController?.navigationBar.tintColor = .black
+
+        sideMenuBtn.target = revealViewController()
+        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
 
         // Create
         let homeImg = UIImage(named: "default")
