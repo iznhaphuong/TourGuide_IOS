@@ -20,7 +20,7 @@ class ReviewTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        let review = Review (username: "admin", avatar: UIImage(named: "avatar")!, reviewContent: "đây là bình luận", ratingValue: 4, reviewTime: "2/2022")
+        let review = Review (username: "admin", avatar: UIImage(named: "default")!, reviewContent: "đây là bình luận", ratingValue: 4, reviewTime: "2/2022")
         if let review = review {
             reviews.append(review)
         }
@@ -40,15 +40,15 @@ class ReviewTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let reuseCell = "CommentTableViewCell"
-         if let cell = tableView.dequeueReusableCell(withIdentifier: reuseCell, for: indexPath) as? CommentTableViewCell {
+        let reuseCell = "ReviewTableViewCell"
+         if let cell = tableView.dequeueReusableCell(withIdentifier: reuseCell, for: indexPath) as? ReviewTableViewCell {
              let review = reviews[indexPath.row]
-             
-             cell.avatar.image = review.avatar
-             cell.username.text = review.username
-             cell.reviewContent.text = review.reviewContent
-             cell.reviewTime.text = review.reviewTime
-             cell.reviewRatingControl.setRatingValue(review.ratingValue)
+            
+             cell.avatar_item.image = review.avatar
+             cell.usename_item.text = review.username
+             cell.reviewContent_item.text = review.reviewContent
+             cell.reviewDate_item.text = review.reviewTime
+             cell.reviewRating_item.setRatingValue(review.ratingValue)
              return cell
          }
          fatalError("Cannot create cell")

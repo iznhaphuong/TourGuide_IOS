@@ -1,14 +1,19 @@
 //
-//  TableViewCell.swift
+//  TourTableViewCell.swift
 //  TourGuide
 //
-//  Created by Nhã Phương on 5/23/22.
+//  Created by Khanh on 22/05/2022.
 //
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class TourTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imgTour: UIImageView!
+    @IBOutlet weak var lblTourTitle: UILabel!
+    @IBOutlet weak var tourRatingControl: RatingControl!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,5 +24,5 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

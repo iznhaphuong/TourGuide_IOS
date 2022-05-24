@@ -59,7 +59,7 @@ import UIKit
             
             // Load stars to the rating butttons
             let bundle = Bundle(for: type(of: self))
-            let normalStar = UIImage(named: "normalStar", in: bundle, compatibleWith: self.traitCollection)
+            let normalStar = UIImage(named: "nomalStar", in: bundle, compatibleWith: self.traitCollection)
             let selectedStar = UIImage(named: "selectedStar", in: bundle, compatibleWith: self.traitCollection)
             let pressedStar = UIImage(named: "pressedStar", in: bundle, compatibleWith: self.traitCollection)
             
