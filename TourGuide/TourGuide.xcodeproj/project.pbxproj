@@ -15,6 +15,7 @@
 		4C6E35CD283A487B003D1D6B /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35CC283A487B003D1D6B /* TourTableViewCell.swift */; };
 		4C6E35CF283A48B6003D1D6B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35CE283A48B6003D1D6B /* RatingControl.swift */; };
 		4C6E35D1283A4986003D1D6B /* TourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */; };
+		4C90A454283CDA410058DA71 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90A453283CDA410058DA71 /* SearchViewController.swift */; };
 		4CE9E48D283BCFCF00895909 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */; };
 		4CE9E48F283BCFE200895909 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E48E283BCFE200895909 /* MainViewController.swift */; };
 		4CE9E491283BD1B900895909 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E490283BD1B900895909 /* SideMenuModel.swift */; };
@@ -61,6 +62,7 @@
 		4C6E35CC283A487B003D1D6B /* TourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
 		4C6E35CE283A48B6003D1D6B /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewController.swift; sourceTree = "<group>"; };
+		4C90A453283CDA410058DA71 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		4CE9E48E283BCFE200895909 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4CE9E490283BD1B900895909 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				DF422D44283D025F001F2EBA /* AddScheduleViewController.swift */,
 				DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */,
 				4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */,
+				4C90A453283CDA410058DA71 /* SearchViewController.swift */,
 				4C427C2D283AA278002B2E4F /* ProfileViewController.swift */,
 				4CE9E48E283BCFE200895909 /* MainViewController.swift */,
 				DF422D3D283D0035001F2EBA /* CustomCells */,
@@ -371,6 +374,7 @@
 				DF422D3F283D0050001F2EBA /* ReviewTableViewCell.swift in Sources */,
 				4C6E35CB283A4767003D1D6B /* Tour.swift in Sources */,
 				4C427C2E283AA278002B2E4F /* ProfileViewController.swift in Sources */,
+				4C90A454283CDA410058DA71 /* SearchViewController.swift in Sources */,
 				4C427C2C283A9B28002B2E4F /* HomeTableViewCell.swift in Sources */,
 				4C6E35CF283A48B6003D1D6B /* RatingControl.swift in Sources */,
 				DF422D43283D00A1001F2EBA /* Review.swift in Sources */,
