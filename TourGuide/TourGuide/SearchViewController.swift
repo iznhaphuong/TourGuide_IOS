@@ -8,10 +8,9 @@
 import UIKit
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tbl: UITableView!
-    
     
     var homes = [Home]()
     var homeTemplate = [Home]()
@@ -20,7 +19,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+//         set both delegate method in ViewDidLoad.
         tbl.delegate = self
         tbl.dataSource = self
        
@@ -97,4 +96,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         tbl.reloadData()
     }
+    
+
 }
