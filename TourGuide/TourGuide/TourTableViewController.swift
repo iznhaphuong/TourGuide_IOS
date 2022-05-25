@@ -11,6 +11,7 @@ class TourTableViewController: UITableViewController {
     //MARK: Properties
     var tourists = [Tour]()
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
+    @IBOutlet var tbl: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,12 @@ class TourTableViewController: UITableViewController {
         if let tour = Tour(tourImage: tourImage, tourTitle: toutTitle, ratingValue: ratingValue) {
             tourists += [tour]
         }
+        
+        // register TableView Cell
+        self.tbl.register(TourCell.nib, forCellReuseIdentifier: TourCell.identifier)
+        
+        // Update TableView with the data
+        self.tbl.reloadData()
     }
 
     // MARK: - Table view data source
@@ -48,12 +55,13 @@ class TourTableViewController: UITableViewController {
 
         // Configure the cell...
 
-        let reuseCell = "TourTableViewCell"
-        if let cell = tableView.dequeueReusableCell(withIdentifier: reuseCell, for: indexPath) as? TourTableViewCell {
+//        let reuseCell = "TourTableViewCell"
+        if let cell = tableView.dequeueReusableCell(withIdentifier: TourCell.identifier, for: indexPath) as? TourCell {
             let tour = tourists[indexPath.row]
             cell.lblTourTitle.text = tour.tourTitle
             cell.imgTour.image = tour.tourImage
             cell.tourRatingControl.setRatingValue(tour.ratingValue)
+            
             return cell
             
         } else {
