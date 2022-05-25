@@ -22,6 +22,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
 //         set both delegate method in ViewDidLoad.
         tbl.delegate = self
         tbl.dataSource = self
+        tbl.backgroundColor = .white
+        tbl.separatorStyle = .none
        
         //
         searchBar.delegate = self
@@ -35,6 +37,13 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         //Assign value second array SearchData
         homes = homeTemplate
+        
+        
+        // register TableView Cell
+        self.tbl.register(HomeCell.nib, forCellReuseIdentifier: HomeCell.identifier)
+        
+        // Update TableView with the data
+        self.tbl.reloadData()
     }
     
     // TABLE VIEW DELEGATE METHOD FUNCTION
@@ -53,11 +62,11 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         
 //         Configure the cell...
-        let reuseCell = "SearchTableViewCell"
-        if let cell = tableView.dequeueReusableCell(withIdentifier: reuseCell, for: indexPath) as? HomeTableViewCell {
+//        let reuseCell = "SearchTableViewCell"
+        if let cell = tableView.dequeueReusableCell(withIdentifier: HomeCell.identifier, for: indexPath) as? HomeCell {
             let home = homes[indexPath.row]
-            cell.lblHomeTitle.text = home.homeTitle
-            cell.imgHome.image = home.homeImage
+            cell.imgLogo.image = home.homeImage
+            cell.lblTitle.text = home.homeTitle
 
             cell.layer.borderWidth = 1
 

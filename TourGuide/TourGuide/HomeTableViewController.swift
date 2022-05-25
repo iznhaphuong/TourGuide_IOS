@@ -10,6 +10,7 @@ import UIKit
 class HomeTableViewController: UITableViewController {
     //MARK: Properties
     @IBOutlet var sideMenuBtn: UIBarButtonItem!
+    @IBOutlet var tbl: UITableView!
     
     
     var homes = [Home]()
@@ -37,6 +38,13 @@ class HomeTableViewController: UITableViewController {
         if let home = Home(homeImage: homeImg, homeTitle: homeTitle) {
             homes += [home]
         }
+        
+        // register TableView Cell
+        self.tbl.register(HomeCell.nib, forCellReuseIdentifier: HomeCell.identifier)
+        
+        // Update TableView with the data
+        self.tbl.reloadData()
+        
     }
 
     // MARK: - Table view data source
@@ -56,11 +64,11 @@ class HomeTableViewController: UITableViewController {
         //let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-        let reuseCell = "HomeTableViewCell"
-        if let cell = tableView.dequeueReusableCell(withIdentifier: reuseCell, for: indexPath) as? HomeTableViewCell {
+//        let reuseCell = "HomeTableViewCell"
+        if let cell = tableView.dequeueReusableCell(withIdentifier: HomeCell.identifier, for: indexPath) as? HomeCell {
             let home = homes[indexPath.row]
-            cell.lblHomeTitle.text = home.homeTitle
-            cell.imgHome.image = home.homeImage
+            cell.lblTitle.text = home.homeTitle
+            cell.imgLogo.image = home.homeImage
             return cell
             
         } else {
