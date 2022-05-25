@@ -33,10 +33,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         homeTemplate.append(Home(homeImage: homeImg, homeTitle: homeTitle)!)
         homeTemplate.append(Home(homeImage: homeImg, homeTitle: homeTitle1)!)
         
-        // Assign Value To Array And Register Cell
-//        tbl.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        tbl.tableFooterView = UIView()
-        
         //Assign value second array SearchData
         homes = homeTemplate
     }
@@ -60,7 +56,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let reuseCell = "SearchTableViewCell"
         if let cell = tableView.dequeueReusableCell(withIdentifier: reuseCell, for: indexPath) as? HomeTableViewCell {
             let home = homes[indexPath.row]
-            NSLog("trongTableView!")
             cell.lblHomeTitle.text = home.homeTitle
             cell.imgHome.image = home.homeImage
 
