@@ -136,9 +136,11 @@ extension MainViewController: SideMenuViewControllerDelegate {
             // Home
             self.showViewController(viewController: UINavigationController.self, storyboardId: "HomeNavID")
         case 1:
-            self.showViewController(viewController: UINavigationController.self, storyboardId: "TouristNavID")
-        case 2:
+            // Profile
             self.showViewController(viewController: UINavigationController.self, storyboardId: "ProfileNavID")
+        case 2:
+            // shedule
+            self.showViewController(viewController: UINavigationController.self, storyboardId: "scheduleNavID")
         default:
             break
         }

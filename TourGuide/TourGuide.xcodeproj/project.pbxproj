@@ -186,16 +186,16 @@
 				DF422D44283D025F001F2EBA /* AddScheduleViewController.swift */,
 				DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */,
 				4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */,
+				DF422D46283D030E001F2EBA /* ReviewViewController.swift */,
 				4C90A453283CDA410058DA71 /* SearchViewController.swift */,
 				4C427C2D283AA278002B2E4F /* ProfileViewController.swift */,
 				4CE9E48E283BCFE200895909 /* MainViewController.swift */,
-				DF422D3D283D0035001F2EBA /* CustomCells */,
 				DFFCB6BF2839E62F00B58DEA /* Main.storyboard */,
+				DF422D3D283D0035001F2EBA /* CustomCells */,
 				DF422D3C283D0024001F2EBA /* Controls */,
 				4CE9E48B283BCF9500895909 /* SideMenu */,
 				4C6E35C9283A474E003D1D6B /* DataModels */,
 				DFFCB6E92839E65400B58DEA /* SystemFiles */,
-				DF422D46283D030E001F2EBA /* ReviewViewController.swift */,
 			);
 			path = TourGuide;
 			sourceTree = "<group>";

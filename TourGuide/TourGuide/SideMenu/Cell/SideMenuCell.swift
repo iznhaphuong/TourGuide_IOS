@@ -11,7 +11,6 @@ class SideMenuCell: UITableViewCell {
     class var identifier: String { return String(describing: self) }
     class var nib: UINib { return UINib(nibName: identifier, bundle: nil) }
     
-    @IBOutlet var iconImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
 
     override func awakeFromNib() {
@@ -21,17 +20,20 @@ class SideMenuCell: UITableViewCell {
         // Background
         self.backgroundColor = .clear
         
-        // Icon
-        self.iconImageView.tintColor = .systemBlue
-        
-        // Title
-        self.titleLabel.textColor = .systemBlue
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
+        if selected {
+            // Title
+            self.titleLabel.textColor = UIColor(#colorLiteral(red:0.3, green:0.68, blue:0.97, alpha:1.0))
+        } else {
+            // Title
+            self.titleLabel.textColor = .black
+        }
         
     }
 

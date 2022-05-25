@@ -17,6 +17,13 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //color background
+        self.tableView.backgroundColor = UIColor(#colorLiteral(red:0.3, green:0.68, blue:0.97, alpha:1.0))
+        let myCustomSelectionColorView = UIView()
+        myCustomSelectionColorView.backgroundColor = .white
+        self.tableView.backgroundView = myCustomSelectionColorView
+        
+        
         
         // Side Menu
         navigationController?.navigationBar.tintColor = .black

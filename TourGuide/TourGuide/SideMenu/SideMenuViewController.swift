@@ -13,9 +13,11 @@ protocol SideMenuViewControllerDelegate {
 
 class SideMenuViewController: UIViewController {
     //MARK: Properties
-    @IBOutlet var headerImageView: UIImageView!
+    @IBOutlet var imgLogo: UIImageView!
     @IBOutlet var sideMenuTableView: UITableView!
-    @IBOutlet var footerLabel: UILabel!
+    @IBOutlet var lblCity: UILabel!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblEmail: UILabel!
     
     
     
@@ -27,12 +29,11 @@ class SideMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let bundle = Bundle(for: type(of: self))
+    
         menu = [
-            SideMenuModel(icon: UIImage(systemName: "house.fill")!, title: "Home"),
-            SideMenuModel(icon: UIImage(named: "tourist", in: bundle, compatibleWith: self.traitCollection), title: "Tourist"),
-            SideMenuModel(icon: UIImage(systemName: "person.fill")!, title: "Profile"),
+            SideMenuModel(title: "Màn hình chính"),
+            SideMenuModel(title: "Hồ sơ cá nhân"),
+            SideMenuModel(title: "Lịch trình"),
         ]
         
         // TableView
@@ -40,17 +41,19 @@ class SideMenuViewController: UIViewController {
         self.sideMenuTableView.dataSource = self
         self.sideMenuTableView.backgroundColor = .white
         self.sideMenuTableView.separatorStyle = .none
+        
+        // Set Header
+        self.imgLogo.layer.cornerRadius = self.imgLogo.frame.height / 2
+        self.lblName.text = "Không Biết Tên"
+        self.lblEmail.text = "khongbietten@gmail.com"
+        self.lblCity.text = "Viet Nam"
+        self.imgLogo.image = UIImage(named: "default")
 
         // Set Highlighted Cell
         DispatchQueue.main.async {
             let defaultRow = IndexPath(row: self.defaultHighlightedCell, section: 0)
             self.sideMenuTableView.selectRow(at: defaultRow, animated: false, scrollPosition: .none)
         }
-
-        // Footer
-        self.footerLabel.textColor = UIColor.black
-        self.footerLabel.font = UIFont.systemFont(ofSize: 12, weight: .bold)
-        self.footerLabel.text = "Developed by DzeroK"
 
         // Register TableView Cell
         self.sideMenuTableView.register(SideMenuCell.nib, forCellReuseIdentifier: SideMenuCell.identifier)
@@ -77,15 +80,14 @@ extension SideMenuViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SideMenuCell.identifier, for: indexPath) as? SideMenuCell else { fatalError("xib doesn't exist") }
-
-        cell.iconImageView.image = self.menu[indexPath.row].icon
+        
+        // Add
         cell.titleLabel.text = self.menu[indexPath.row].title
 
-        // Highlighted color
-        let myCustomSelectionColorView = UIView()
-        myCustomSelectionColorView.backgroundColor = .darkGray
-        
-        cell.selectedBackgroundView = myCustomSelectionColorView
+        // Highlighted color background
+//        let myCustomSelectionColorView = UIView()
+//        myCustomSelectionColorView.backgroundColor = .darkGray
+//        cell.selectedBackgroundView = myCustomSelectionColorView
         return cell
     }
 

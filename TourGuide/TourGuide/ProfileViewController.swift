@@ -16,7 +16,16 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         // Side Menu
-        navigationController?.navigationBar.tintColor = .black
+        
+        self.navigationController!.navigationBar.barStyle = .black
+//        self.navigationController!.navigationBar.isTranslucent = false
+        self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        
+        navigationController?.navigationBar.tintColor = .white
+//        navigationController?.navigationBar.backgroundColor = UIColor(#colorLiteral(red:0.2, green:0.6, blue:0.94, alpha:1.0))
+//
+//        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
