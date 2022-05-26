@@ -41,7 +41,7 @@
                 <outlet property="imgLogo" destination="Yp4-zo-cIf" id="IQS-O9-2aw"/>
                 <outlet property="lblTitle" destination="DR1-iA-tmG" id="QJC-as-gO0"/>
             </connections>
-            <point key="canvasLocation" x="-373.91304347826087" y="48.883928571428569"/>
+            <point key="canvasLocation" x="-77" y="31"/>
         </tableViewCell>
     </objects>
 </document>

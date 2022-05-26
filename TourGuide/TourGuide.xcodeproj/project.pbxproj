@@ -10,6 +10,7 @@
 		4C427C28283A98A9002B2E4F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427C27283A98A9002B2E4F /* HomeTableViewController.swift */; };
 		4C427C2A283A994F002B2E4F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427C29283A994F002B2E4F /* Home.swift */; };
 		4C427C2E283AA278002B2E4F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427C2D283AA278002B2E4F /* ProfileViewController.swift */; };
+		4C4B758F2840007300D3E9C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B758E2840007300D3E9C4 /* HomeViewController.swift */; };
 		4C6E35CB283A4767003D1D6B /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35CA283A4767003D1D6B /* Tour.swift */; };
 		4C6E35CF283A48B6003D1D6B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35CE283A48B6003D1D6B /* RatingControl.swift */; };
 		4C6E35D1283A4986003D1D6B /* TourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */; };
@@ -59,6 +60,7 @@
 		4C427C27283A98A9002B2E4F /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		4C427C29283A994F002B2E4F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4C427C2D283AA278002B2E4F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4C4B758E2840007300D3E9C4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4C6E35CA283A4767003D1D6B /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		4C6E35CE283A48B6003D1D6B /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */,
 				4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */,
 				4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */,
+				4C4B758E2840007300D3E9C4 /* HomeViewController.swift */,
 				DF422D46283D030E001F2EBA /* ReviewViewController.swift */,
 				4C90A453283CDA410058DA71 /* SearchViewController.swift */,
 				4C427C2D283AA278002B2E4F /* ProfileViewController.swift */,
@@ -366,6 +369,7 @@
 				4CE9E497283BD29700895909 /* SideMenuCell.swift in Sources */,
 				DF422D47283D030E001F2EBA /* ReviewViewController.swift in Sources */,
 				4CE9E48F283BCFE200895909 /* MainViewController.swift in Sources */,
+				4C4B758F2840007300D3E9C4 /* HomeViewController.swift in Sources */,
 				4C903F22283E6CCC00038A79 /* TourCell.swift in Sources */,
 				DF422D41283D0074001F2EBA /* ReviewTableViewController.swift in Sources */,
 				DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */,
