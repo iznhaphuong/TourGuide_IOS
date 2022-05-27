@@ -7,10 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C427C26283A962A002B2E4F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427C25283A962A002B2E4F /* LoginViewController.swift */; };
+		227B0570283F6A710097DED0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227B056F283F6A710097DED0 /* SignInViewController.swift */; };
+		227B0572283F6AA60097DED0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227B0571283F6AA60097DED0 /* SignUpViewController.swift */; };
+		22E4B5B0283EF27D004E118E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22E4B5AF283EF27C004E118E /* GoogleService-Info.plist */; };
+		4C427C28283A98A9002B2E4F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427C27283A98A9002B2E4F /* HomeTableViewController.swift */; };
+		4C427C2A283A994F002B2E4F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427C29283A994F002B2E4F /* Home.swift */; };
+		4C427C2E283AA278002B2E4F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427C2D283AA278002B2E4F /* ProfileViewController.swift */; };
+		4C6E35CB283A4767003D1D6B /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35CA283A4767003D1D6B /* Tour.swift */; };
+		4C6E35CF283A48B6003D1D6B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35CE283A48B6003D1D6B /* RatingControl.swift */; };
+		4C6E35D1283A4986003D1D6B /* TourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */; };
+		4C903F1A283E604600038A79 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C903F19283E604600038A79 /* HomeCell.xib */; };
+		4C903F1C283E607000038A79 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C903F1B283E607000038A79 /* HomeCell.swift */; };
+		4C903F20283E688E00038A79 /* TourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C903F1F283E688E00038A79 /* TourCell.xib */; };
+		4C903F22283E6CCC00038A79 /* TourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C903F21283E6CCC00038A79 /* TourCell.swift */; };
+		4C90A454283CDA410058DA71 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90A453283CDA410058DA71 /* SearchViewController.swift */; };
+		4CE9E48D283BCFCF00895909 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */; };
+		4CE9E48F283BCFE200895909 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E48E283BCFE200895909 /* MainViewController.swift */; };
+		4CE9E491283BD1B900895909 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E490283BD1B900895909 /* SideMenuModel.swift */; };
+		4CE9E497283BD29700895909 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E496283BD29700895909 /* SideMenuCell.swift */; };
+		4CE9E499283BD33700895909 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9E498283BD33700895909 /* SideMenuCell.xib */; };
+		DF422D3F283D0050001F2EBA /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */; };
+		DF422D41283D0074001F2EBA /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */; };
+		DF422D43283D00A1001F2EBA /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D42283D00A1001F2EBA /* Review.swift */; };
+		DF422D45283D025F001F2EBA /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D44283D025F001F2EBA /* AddScheduleViewController.swift */; };
+		DF422D47283D030E001F2EBA /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D46283D030E001F2EBA /* ReviewViewController.swift */; };
 		DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */; };
 		DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */; };
-		DFFCB6BE2839E62F00B58DEA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6BD2839E62F00B58DEA /* RegisterViewController.swift */; };
 		DFFCB6C12839E62F00B58DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFCB6BF2839E62F00B58DEA /* Main.storyboard */; };
 		DFFCB6C32839E63000B58DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFCB6C22839E63000B58DEA /* Assets.xcassets */; };
 		DFFCB6C62839E63000B58DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFCB6C42839E63000B58DEA /* LaunchScreen.storyboard */; };
@@ -37,11 +59,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C427C25283A962A002B2E4F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Assets.xcassets/LoginViewController.swift; sourceTree = "<group>"; };
+		227B056F283F6A710097DED0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		227B0571283F6AA60097DED0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		22E4B5AF283EF27C004E118E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C427C27283A98A9002B2E4F /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		4C427C29283A994F002B2E4F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4C427C2D283AA278002B2E4F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4C6E35CA283A4767003D1D6B /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		4C6E35CE283A48B6003D1D6B /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewController.swift; sourceTree = "<group>"; };
+		4C903F19283E604600038A79 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		4C903F1B283E607000038A79 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		4C903F1F283E688E00038A79 /* TourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourCell.xib; sourceTree = "<group>"; };
+		4C903F21283E6CCC00038A79 /* TourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourCell.swift; sourceTree = "<group>"; };
+		4C90A453283CDA410058DA71 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		4CE9E48E283BCFE200895909 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4CE9E490283BD1B900895909 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		4CE9E496283BD29700895909 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		4CE9E498283BD33700895909 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
+		DF422D42283D00A1001F2EBA /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		DF422D44283D025F001F2EBA /* AddScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
+		DF422D46283D030E001F2EBA /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		DFFCB6B62839E62F00B58DEA /* TourGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DFFCB6BD2839E62F00B58DEA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DFFCB6C02839E62F00B58DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFFCB6C22839E63000B58DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFFCB6C52839E63000B58DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +122,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C6E35C9283A474E003D1D6B /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				4CE9E490283BD1B900895909 /* SideMenuModel.swift */,
+				4C6E35CA283A4767003D1D6B /* Tour.swift */,
+				4C427C29283A994F002B2E4F /* Home.swift */,
+				DF422D42283D00A1001F2EBA /* Review.swift */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
+		4CE9E493283BD1FF00895909 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4CE9E498283BD33700895909 /* SideMenuCell.xib */,
+				4C903F19283E604600038A79 /* HomeCell.xib */,
+				4C903F1F283E688E00038A79 /* TourCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DF422D3C283D0024001F2EBA /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				4C6E35CE283A48B6003D1D6B /* RatingControl.swift */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		DF422D3D283D0035001F2EBA /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				4CE9E493283BD1FF00895909 /* Cell */,
+				DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */,
+				4C903F21283E6CCC00038A79 /* TourCell.swift */,
+				4C903F1B283E607000038A79 /* HomeCell.swift */,
+				4CE9E496283BD29700895909 /* SideMenuCell.swift */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
 		DFFCB6AD2839E62F00B58DEA = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +186,21 @@
 		DFFCB6B82839E62F00B58DEA /* TourGuide */ = {
 			isa = PBXGroup;
 			children = (
-				4C427C25283A962A002B2E4F /* LoginViewController.swift */,
-				DFFCB6BD2839E62F00B58DEA /* RegisterViewController.swift */,
+				227B0571283F6AA60097DED0 /* SignUpViewController.swift */,
+				227B056F283F6A710097DED0 /* SignInViewController.swift */,
+				4C427C27283A98A9002B2E4F /* HomeTableViewController.swift */,
+				DF422D44283D025F001F2EBA /* AddScheduleViewController.swift */,
+				DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */,
+				4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */,
+				4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */,
+				DF422D46283D030E001F2EBA /* ReviewViewController.swift */,
+				4C90A453283CDA410058DA71 /* SearchViewController.swift */,
+				4C427C2D283AA278002B2E4F /* ProfileViewController.swift */,
+				4CE9E48E283BCFE200895909 /* MainViewController.swift */,
 				DFFCB6BF2839E62F00B58DEA /* Main.storyboard */,
+				DF422D3D283D0035001F2EBA /* CustomCells */,
+				DF422D3C283D0024001F2EBA /* Controls */,
+				4C6E35C9283A474E003D1D6B /* DataModels */,
 				DFFCB6E92839E65400B58DEA /* SystemFiles */,
 			);
 			path = TourGuide;
@@ -132,8 +229,9 @@
 				DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */,
 				DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */,
 				DFFCB6C22839E63000B58DEA /* Assets.xcassets */,
-				DFFCB6C72839E63000B58DEA /* Info.plist */,
 				DFFCB6C42839E63000B58DEA /* LaunchScreen.storyboard */,
+				DFFCB6C72839E63000B58DEA /* Info.plist */,
+				22E4B5AF283EF27C004E118E /* GoogleService-Info.plist */,
 			);
 			name = SystemFiles;
 			sourceTree = "<group>";
@@ -245,6 +343,10 @@
 				DFFCB6C62839E63000B58DEA /* LaunchScreen.storyboard in Resources */,
 				DFFCB6C32839E63000B58DEA /* Assets.xcassets in Resources */,
 				DFFCB6C12839E62F00B58DEA /* Main.storyboard in Resources */,
+				4CE9E499283BD33700895909 /* SideMenuCell.xib in Resources */,
+				4C903F1A283E604600038A79 /* HomeCell.xib in Resources */,
+				4C903F20283E688E00038A79 /* TourCell.xib in Resources */,
+				22E4B5B0283EF27D004E118E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +371,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C427C26283A962A002B2E4F /* LoginViewController.swift in Sources */,
-				DFFCB6BE2839E62F00B58DEA /* RegisterViewController.swift in Sources */,
+				227B0572283F6AA60097DED0 /* SignUpViewController.swift in Sources */,
+				4C427C28283A98A9002B2E4F /* HomeTableViewController.swift in Sources */,
+				4C903F1C283E607000038A79 /* HomeCell.swift in Sources */,
+				4CE9E497283BD29700895909 /* SideMenuCell.swift in Sources */,
+				DF422D47283D030E001F2EBA /* ReviewViewController.swift in Sources */,
+				4CE9E48F283BCFE200895909 /* MainViewController.swift in Sources */,
+				4C903F22283E6CCC00038A79 /* TourCell.swift in Sources */,
+				DF422D41283D0074001F2EBA /* ReviewTableViewController.swift in Sources */,
 				DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */,
 				DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */,
+				4CE9E48D283BCFCF00895909 /* SideMenuViewController.swift in Sources */,
+				DF422D45283D025F001F2EBA /* AddScheduleViewController.swift in Sources */,
+				4C427C2A283A994F002B2E4F /* Home.swift in Sources */,
+				DF422D3F283D0050001F2EBA /* ReviewTableViewCell.swift in Sources */,
+				4C6E35CB283A4767003D1D6B /* Tour.swift in Sources */,
+				227B0570283F6A710097DED0 /* SignInViewController.swift in Sources */,
+				4C427C2E283AA278002B2E4F /* ProfileViewController.swift in Sources */,
+				4C90A454283CDA410058DA71 /* SearchViewController.swift in Sources */,
+				4C6E35CF283A48B6003D1D6B /* RatingControl.swift in Sources */,
+				DF422D43283D00A1001F2EBA /* Review.swift in Sources */,
+				4C6E35D1283A4986003D1D6B /* TourTableViewController.swift in Sources */,
+				4CE9E491283BD1B900895909 /* SideMenuModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

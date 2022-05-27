@@ -1,20 +1,18 @@
 //
-//  LoginViewController.swift
+//  SignInViewController.swift
 //  TourGuide
 //
-//  Created by Khanh on 22/05/2022.
+//  Created by MinhDuc on 26/05/2022.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    @IBOutlet weak var imgLogo: UIImageView!
-    
+class SignInViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        imgLogo.layer.cornerRadius = imgLogo.frame.height / 2
     }
     
 
@@ -27,6 +25,5 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
 
 }
