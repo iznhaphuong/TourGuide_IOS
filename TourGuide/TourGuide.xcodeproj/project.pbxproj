@@ -29,6 +29,7 @@
 		DF422D43283D00A1001F2EBA /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D42283D00A1001F2EBA /* Review.swift */; };
 		DF422D45283D025F001F2EBA /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D44283D025F001F2EBA /* AddScheduleViewController.swift */; };
 		DF422D47283D030E001F2EBA /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D46283D030E001F2EBA /* ReviewViewController.swift */; };
+		DF87FD842842452C0019EB82 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF87FD832842452C0019EB82 /* MapViewController.swift */; };
 		DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */; };
 		DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */; };
 		DFFCB6C12839E62F00B58DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFCB6BF2839E62F00B58DEA /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		DF422D42283D00A1001F2EBA /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		DF422D44283D025F001F2EBA /* AddScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
 		DF422D46283D030E001F2EBA /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		DF87FD832842452C0019EB82 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DFFCB6B62839E62F00B58DEA /* TourGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				4C427C27283A98A9002B2E4F /* HomeTableViewController.swift */,
+				DF87FD832842452C0019EB82 /* MapViewController.swift */,
 				DF422D44283D025F001F2EBA /* AddScheduleViewController.swift */,
 				DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */,
 				4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */,
@@ -375,6 +378,7 @@
 				DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */,
 				DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */,
 				4CE9E48D283BCFCF00895909 /* SideMenuViewController.swift in Sources */,
+				DF87FD842842452C0019EB82 /* MapViewController.swift in Sources */,
 				DF422D45283D025F001F2EBA /* AddScheduleViewController.swift in Sources */,
 				4C427C2A283A994F002B2E4F /* Home.swift in Sources */,
 				DF422D3F283D0050001F2EBA /* ReviewTableViewCell.swift in Sources */,
