@@ -25,6 +25,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Side Menu
+        
+        self.navigationController!.navigationBar.barStyle = .black
+        self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.tintColor = .white
+        sideMenuBtn.target = revealViewController()
+        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
+        
+        
         //set both delegate method in ViewDidLoad.
         tbl.delegate = self
         tbl.dataSource = self
@@ -40,14 +49,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 //        let myCustomSelectionColorView = UIView()
 //        myCustomSelectionColorView.backgroundColor = .white
 //        self.tableView.backgroundView = myCustomSelectionColorView
-        
-        
-        
-        // Side Menu
-        navigationController?.navigationBar.tintColor = .black
 
-        sideMenuBtn.target = revealViewController()
-        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
 
         // Create
         let homeImg = UIImage(named: "default")
