@@ -1,10 +1,12 @@
 {
   "images" : [
     {
+      "filename" : "node-2.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "node-1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },

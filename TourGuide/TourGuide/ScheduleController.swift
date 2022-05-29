@@ -16,6 +16,8 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
     
     
     @IBOutlet weak var lblMonth: UILabel!
+    
+    
     @IBOutlet weak var tableView: UITableView!
     var date = Date();
     
