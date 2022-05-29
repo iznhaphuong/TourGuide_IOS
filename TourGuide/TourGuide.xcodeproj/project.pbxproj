@@ -25,7 +25,6 @@
 		4CE9E497283BD29700895909 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E496283BD29700895909 /* SideMenuCell.swift */; };
 		4CE9E499283BD33700895909 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9E498283BD33700895909 /* SideMenuCell.xib */; };
 		DF422D3F283D0050001F2EBA /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */; };
-		DF422D41283D0074001F2EBA /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */; };
 		DF422D43283D00A1001F2EBA /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D42283D00A1001F2EBA /* Review.swift */; };
 		DF422D45283D025F001F2EBA /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D44283D025F001F2EBA /* AddScheduleViewController.swift */; };
 		DF422D47283D030E001F2EBA /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D46283D030E001F2EBA /* ReviewViewController.swift */; };
@@ -76,7 +75,6 @@
 		4CE9E496283BD29700895909 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		4CE9E498283BD33700895909 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
 		DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
-		DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		DF422D42283D00A1001F2EBA /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		DF422D44283D025F001F2EBA /* AddScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
 		DF422D46283D030E001F2EBA /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 				4C427C27283A98A9002B2E4F /* HomeTableViewController.swift */,
 				DF87FD832842452C0019EB82 /* MapViewController.swift */,
 				DF422D44283D025F001F2EBA /* AddScheduleViewController.swift */,
-				DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */,
 				4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */,
 				4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */,
 				4C4B758E2840007300D3E9C4 /* HomeViewController.swift */,
@@ -374,7 +371,6 @@
 				4CE9E48F283BCFE200895909 /* MainViewController.swift in Sources */,
 				4C4B758F2840007300D3E9C4 /* HomeViewController.swift in Sources */,
 				4C903F22283E6CCC00038A79 /* TourCell.swift in Sources */,
-				DF422D41283D0074001F2EBA /* ReviewTableViewController.swift in Sources */,
 				DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */,
 				DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */,
 				4CE9E48D283BCFCF00895909 /* SideMenuViewController.swift in Sources */,
