@@ -8,20 +8,22 @@
 import UIKit
 class Event{
     //MARK: Properties
-    var date:String;
+    var date = Date();
      var day:String;
      var placeName:String;
-    var time:String;
-    var noteEvent:String;
+    var time = Date();
+    var noteEvent:String?;
+    
     
     
     //MARK:Constructors
 //    constructor co the tao duoc hoac khong tao duoc tu nhung bien truyen vao
-    init?( date:String,
+    init?( date:Date,
      day:String,
      placeName:String,
-    time:String,
+    time:Date,
     noteEvent:String) {
+     
         self.date = date;
         self.day = day;
         self.placeName = placeName;
