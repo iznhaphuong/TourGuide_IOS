@@ -14,8 +14,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var myIndex = 0
     
-    var homes = [Home]()
-    var homeTemplate = [Home]()
+    var homes = [City]()
+    var homeTemplate = [City]()
     
     var tours = [Tour]()
     var tourTemplate = [Tour]()
@@ -112,8 +112,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         case .home:
             if let cell = tableView.dequeueReusableCell(withIdentifier: HomeCell.identifier, for: indexPath) as? HomeCell {
                 let home = homes[indexPath.row]
-                cell.imgLogo.image = home.homeImage
-                cell.lblTitle.text = home.homeTitle
+                cell.configure(with: home)
 
                 cell.layer.borderWidth = 1
 
@@ -163,9 +162,9 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         switch navigationType {
         case .home:
             homes = searchText.isEmpty ? homeTemplate : homeTemplate.filter {
-                (item: Home) -> Bool in
+                (item: City) -> Bool in
                         // If dataItem matches the searchText, return true to include it
-                return item.homeTitle.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+                return item.name.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
             }
         case .tour:
             tours = searchText.isEmpty ? tourTemplate : tourTemplate.filter {
@@ -190,7 +189,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             case "searTour":
                 if let destinationController = segue.destination as? TourTableViewController {
                     let home = homes[myIndex]
-                    destinationController.data = Tour(tourImage: home.homeImage, tourTitle: home.homeTitle, ratingValue: 4)
+                    destinationController.tours = Database.getTour(id: home.id)
                 }
             default:
                 break

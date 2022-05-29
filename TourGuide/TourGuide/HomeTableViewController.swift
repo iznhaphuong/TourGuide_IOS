@@ -13,7 +13,7 @@ class HomeTableViewController: UITableViewController {
     @IBOutlet var tbl: UITableView!
     
     var myIndex = 0
-    var homes = [Home]()
+    var homes = [City]()
     
     enum NavagationType {
         case home
@@ -44,15 +44,15 @@ class HomeTableViewController: UITableViewController {
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
 
         // Create
-        let homeImg = UIImage(named: "default")
-        let homeTitle = "Hà Nội"
-        let homeTitle1 = "Da Lat"
-        if let home = Home(homeImage: homeImg, homeTitle: homeTitle) {
-            homes += [home]
-        }
-        if let home = Home(homeImage: homeImg, homeTitle: homeTitle1) {
-            homes += [home]
-        }
+//        let homeImg = UIImage(named: "default")
+//        let homeTitle = "Hà Nội"
+//        let homeTitle1 = "Da Lat"
+//        if let home = Home(homeImage: homeImg, homeTitle: homeTitle) {
+//            homes += [home]
+//        }
+//        if let home = Home(homeImage: homeImg, homeTitle: homeTitle1) {
+//            homes += [home]
+//        }
         
         // register TableView Cell
         self.tbl.register(HomeCell.nib, forCellReuseIdentifier: HomeCell.identifier)
@@ -150,7 +150,8 @@ class HomeTableViewController: UITableViewController {
             case "homeTour":
                 if let destinationController = segue.destination as? TourTableViewController {
                     let home = homes[myIndex]
-                    destinationController.data = Tour(tourImage: home.homeImage, tourTitle: home.homeTitle, ratingValue: 4)
+                    destinationController.tours = Database.getTour(id: home.id)
+                    destinationController.idCity = home.id
                 }
                 
             default:
