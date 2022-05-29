@@ -21,6 +21,20 @@ class ReviewViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var lblNotice: UILabel!
     
     override func viewDidLoad() {
+        // Side Menu
+//        navigationController?.navigationBar.prefersLargeTitles = true
+
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .blue
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        navigationController?.navigationBar.tintColor = UIColor(#colorLiteral(red:33, green:150, blue:243, alpha:1.0))
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        
         //Add dummy data to datasource
         let review = Review (username: "admin", avatar: UIImage(named: "default")!, reviewContent: "đây là bình luận", ratingValue: 4, reviewTime: "2/2022")
         if let review = review {
