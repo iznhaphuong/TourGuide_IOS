@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="102" id="epj-Vc-8DM" customClass="HomeCell" customModule="TourGuide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="epj-Vc-8DM" id="CqL-FA-U1D">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yp4-zo-cIf">
+                        <rect key="frame" x="8" y="11" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="KFz-KL-cxr"/>
+                            <constraint firstAttribute="width" constant="80" id="vni-aR-dqj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR1-iA-tmG">
+                        <rect key="frame" x="96" y="41" width="298" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Yp4-zo-cIf" firstAttribute="centerY" secondItem="CqL-FA-U1D" secondAttribute="centerY" id="2bG-j7-XIi"/>
+                    <constraint firstItem="Yp4-zo-cIf" firstAttribute="leading" secondItem="CqL-FA-U1D" secondAttribute="leading" constant="8" id="3M9-6B-N3D"/>
+                    <constraint firstItem="DR1-iA-tmG" firstAttribute="centerY" secondItem="CqL-FA-U1D" secondAttribute="centerY" id="Igr-3a-5L4"/>
+                    <constraint firstItem="DR1-iA-tmG" firstAttribute="leading" secondItem="Yp4-zo-cIf" secondAttribute="trailing" constant="8" id="JvK-IF-A7X"/>
+                    <constraint firstAttribute="trailing" secondItem="DR1-iA-tmG" secondAttribute="trailing" constant="20" id="Z57-Wr-dMR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgLogo" destination="Yp4-zo-cIf" id="IQS-O9-2aw"/>
+                <outlet property="lblTitle" destination="DR1-iA-tmG" id="QJC-as-gO0"/>
+            </connections>
+            <point key="canvasLocation" x="-77" y="31"/>
+        </tableViewCell>
+    </objects>
+</document>
