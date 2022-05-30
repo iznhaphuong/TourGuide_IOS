@@ -32,11 +32,11 @@ class ReviewViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = .blue
+        navigationController?.navigationBar.barStyle = .black
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
 
-        navigationController?.navigationBar.tintColor = UIColor(#colorLiteral(red:33, green:150, blue:243, alpha:1.0))
-        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.tintColor = UIColor(#colorLiteral(red:12, green:122, blue:255, alpha:1.0))
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.compactAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
@@ -125,4 +125,15 @@ class ReviewViewController: UIViewController, UITableViewDelegate, UITableViewDa
      // Pass the selected object to the new view controller.
      }
      */
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.revealViewController()?.gestureEnabled = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.revealViewController()?.gestureEnabled = true
+    }
 }
