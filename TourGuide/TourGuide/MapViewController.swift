@@ -17,6 +17,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+        
         locationManager = CLLocationManager()
         
         //Get user location

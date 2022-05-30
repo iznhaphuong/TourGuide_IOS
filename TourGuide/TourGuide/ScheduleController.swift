@@ -28,6 +28,18 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
     var events = [Event]();
         override func viewDidLoad() {
             super.viewDidLoad()
+            
+            let appearance = UINavigationBarAppearance()
+            appearance.backgroundColor = .blue
+            navigationController?.navigationBar.barStyle = .black
+            appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+            navigationController?.navigationBar.tintColor = UIColor(#colorLiteral(red:12, green:122, blue:255, alpha:1.0))
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.compactAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+
 
             // set a background color so we can easily see the table
             let dateFormatter = DateFormatter()
@@ -36,7 +48,7 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
             let month = dateFormatter.string(from: self.date)
             let splitMonth = month.components(separatedBy:["/"," "])
    
-            lblMonth.text = splitMonth[2] + " " + splitMonth[3] + splitMonth[4]
+//            lblMonth.text = splitMonth[2] + " " + splitMonth[3] + splitMonth[4]
                     
                 
             // create time format
@@ -152,7 +164,7 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
                         destiController.event = events[selectedIndexPath.row]
                     }
                     //Mark the way to meal detail controller
-                    destiController.navigationType = .addEvent
+//                    destiController.navigationType = .addEvent
                 }
                 
             case "editEvent":
