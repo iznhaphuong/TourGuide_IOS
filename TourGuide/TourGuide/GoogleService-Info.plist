@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>748841697508-3pdctk9dr44bfsinsgec78lbsmrsocub.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.748841697508-3pdctk9dr44bfsinsgec78lbsmrsocub</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD14SDqr-YZeQOQpf5foLqC2EEiYqHdc3Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>748841697508</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>vn.tdc.edu.TourGuide</string>
+	<key>PROJECT_ID</key>
+	<string>tourguide-ios-45960</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tourguide-ios-45960.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:748841697508:ios:d87a765c67fcea6fa0acf1</string>
+	<key>DATABASE_URL</key>
+	<string>https://tourguide-ios-45960-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

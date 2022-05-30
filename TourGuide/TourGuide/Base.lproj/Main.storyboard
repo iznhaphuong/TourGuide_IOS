@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="biH-mw-4Uu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ci0-Hj-eAz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -39,7 +39,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Đăng nhâp"/>
                                         <connections>
-                                            <action selector="login:" destination="ci0-Hj-eAz" eventType="touchUpInside" id="sKS-lI-fgb"/>
+                                            <action selector="login:" destination="ci0-Hj-eAz" eventType="touchUpInside" id="24p-Br-IG4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -78,7 +78,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="signUp:" destination="ci0-Hj-eAz" eventType="touchUpInside" id="utP-55-5mn"/>
+                                            <action selector="signUp:" destination="ci0-Hj-eAz" eventType="touchUpInside" id="xBh-nt-lNW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -105,14 +105,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="MQb-QD-Siq"/>
                     <connections>
-                        <outlet property="email" destination="830-i9-JGh" id="5Np-B7-54K"/>
-                        <outlet property="logoImage" destination="QNt-jY-b5E" id="EIA-c6-4hC"/>
-                        <outlet property="password" destination="Aq9-Ro-q8n" id="Kub-rD-bLM"/>
+                        <outlet property="email" destination="830-i9-JGh" id="xrT-Oa-ba6"/>
+                        <outlet property="logoImage" destination="QNt-jY-b5E" id="ayr-j8-iBi"/>
+                        <outlet property="password" destination="Aq9-Ro-q8n" id="wga-jl-H2P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5J6-tB-OFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1542" y="-575"/>
+            <point key="canvasLocation" x="-1941" y="-623"/>
         </scene>
         <!--Sign Up -->
         <scene sceneID="PP8-6z-TG3">
@@ -158,7 +158,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Đăng nhập"/>
                                         <connections>
-                                            <action selector="signIn:" destination="biH-mw-4Uu" eventType="touchUpInside" id="rjI-Mx-8cR"/>
+                                            <action selector="signIn:" destination="biH-mw-4Uu" eventType="touchUpInside" id="drt-jC-loY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -197,7 +197,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Tạo tài khoản"/>
                                         <connections>
-                                            <action selector="signUpTapped:" destination="biH-mw-4Uu" eventType="touchUpInside" id="met-8v-4Te"/>
+                                            <action selector="signUpTapped:" destination="biH-mw-4Uu" eventType="touchUpInside" id="h3x-Yi-Opd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -219,11 +219,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="logoImage" destination="UIg-TK-Vb6" id="5KE-GN-itS"/>
-                        <outlet property="password" destination="YmO-Sp-iqH" id="PfC-Qk-sJk"/>
-                        <outlet property="repassword" destination="sso-s2-CUw" id="cmL-5x-hg8"/>
-                        <outlet property="userEmail" destination="JZ8-SD-0fu" id="hG8-s5-sUi"/>
-                        <outlet property="userName" destination="gir-xG-FCf" id="Jid-kP-oun"/>
+                        <outlet property="logoImage" destination="UIg-TK-Vb6" id="fpU-t3-WGB"/>
+                        <outlet property="password" destination="YmO-Sp-iqH" id="5YH-Wz-2xT"/>
+                        <outlet property="repassword" destination="sso-s2-CUw" id="Ghj-Wp-IfP"/>
+                        <outlet property="userEmail" destination="JZ8-SD-0fu" id="q9U-BQ-73U"/>
+                        <outlet property="userName" destination="gir-xG-FCf" id="Uac-Ww-Ced"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fV-gQ-YKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -396,7 +396,7 @@
         <!--Main View Controller-->
         <scene sceneID="qkg-Qr-4pS">
             <objects>
-                <viewController id="Rp7-Z6-XR9" customClass="MainViewController" customModule="TourGuide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="Rp7-Z6-XR9" customClass="MainViewController" customModule="TourGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4M0-iR-dSu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,20 +451,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="QXB-VJ-Knd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="QXB-VJ-Knd">
                                 <rect key="frame" x="20" y="575" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="8h8-fI-PcJ"/>
                                     <constraint firstAttribute="width" secondItem="QXB-VJ-Knd" secondAttribute="height" multiplier="1:1" id="id0-jU-d44"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jY-Wv-UaA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jY-Wv-UaA">
                                 <rect key="frame" x="100" y="597" width="35" height="18"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIJ-KB-mBz" customClass="RatingControl" customModule="TourGuide">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIJ-KB-mBz" customClass="RatingControl" customModule="TourGuide">
                                 <rect key="frame" x="100" y="620" width="220" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uIJ-KB-mBz" secondAttribute="height" multiplier="5:1" id="Rfu-nb-L8J"/>
@@ -478,7 +478,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iHi-qf-8wS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iHi-qf-8wS">
                                 <rect key="frame" x="0.0" y="138" width="414" height="422"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -965,7 +965,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="TouristAttractionsModalID" id="Mr4-Se-hOV" customClass="TourTableViewController" customModule="TourGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="177" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PR7-P8-Fuu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
@@ -993,17 +993,17 @@
             <objects>
                 <viewController id="hJL-Pz-QTE" customClass="SearchViewController" customModule="TourGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FLJ-Dd-55n">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mlR-S7-xcw">
-                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jur-OJ-yjr">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="798"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1NQ-JZ-QQ0">
-                                                <rect key="frame" x="0.0" y="51" width="414" height="747"/>
+                                                <rect key="frame" x="0.0" y="51" width="414" height="723"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </tableView>
                                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Fkh-s9-qRb">
@@ -1374,7 +1374,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VKt-nz-mUa"/>
+        <segue reference="u00-x1-NWC"/>
         <segue reference="a4V-4w-TgN"/>
         <segue reference="9DU-gd-CSm"/>
     </inferredMetricsTieBreakers>
@@ -1384,7 +1384,7 @@
         <image name="menu" width="25" height="25"/>
         <image name="node" width="180" height="180"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
