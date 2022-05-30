@@ -18,6 +18,13 @@
 		4C903F20283E688E00038A79 /* TourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C903F1F283E688E00038A79 /* TourCell.xib */; };
 		4C903F22283E6CCC00038A79 /* TourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C903F21283E6CCC00038A79 /* TourCell.swift */; };
 		4C90A454283CDA410058DA71 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90A453283CDA410058DA71 /* SearchViewController.swift */; };
+		4C93ABC128451D6800643457 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93ABC028451D6800643457 /* SignInViewController.swift */; };
+		4C93ABC328451D7F00643457 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93ABC228451D7F00643457 /* SignUpViewController.swift */; };
+		4C93ABC628451F3E00643457 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4C93ABC528451F3E00643457 /* FirebaseAnalytics */; };
+		4C93ABC828451F3E00643457 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4C93ABC728451F3E00643457 /* FirebaseAuth */; };
+		4C93ABCA28451F3E00643457 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4C93ABC928451F3E00643457 /* FirebaseFirestore */; };
+		4C93ABCC28451F3E00643457 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4C93ABCB28451F3E00643457 /* FirebaseStorage */; };
+		4C93ABCE28451F4F00643457 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C93ABCD28451F4F00643457 /* GoogleService-Info.plist */; };
 		4CA881B92843F0A000F13154 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA881B82843F0A000F13154 /* Database.swift */; };
 		4CA881BB2843F1CB00F13154 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA881BA2843F1CB00F13154 /* City.swift */; };
 		4CA881BF2843F7AD00F13154 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA881BE2843F7AD00F13154 /* Destination.swift */; };
@@ -27,15 +34,15 @@
 		4CE9E491283BD1B900895909 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E490283BD1B900895909 /* SideMenuModel.swift */; };
 		4CE9E497283BD29700895909 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E496283BD29700895909 /* SideMenuCell.swift */; };
 		4CE9E499283BD33700895909 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9E498283BD33700895909 /* SideMenuCell.xib */; };
-		C0649BC4284470BE00B5D018 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BC3284470BE00B5D018 /* Event.swift */; };
 		C0649BC6284470D600B5D018 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BC5284470D500B5D018 /* ScheduleController.swift */; };
 		C0649BC8284470EF00B5D018 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BC7284470EF00B5D018 /* ScheduleTableViewCell.swift */; };
-		C0649BCE284471E500B5D018 /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BCD284471E500B5D018 /* AddScheduleViewController.swift */; };
-		C0649BD82844C03200B5D018 /* DetailDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BD72844C03200B5D018 /* DetailDestinationViewController.swift */; };
+		C0C05E1628454E100081505F /* DetailDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C05E1528454E100081505F /* DetailDestinationViewController.swift */; };
+		C0C05E1828454E570081505F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C05E1728454E570081505F /* Event.swift */; };
 		DF422D3F283D0050001F2EBA /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */; };
 		DF422D43283D00A1001F2EBA /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D42283D00A1001F2EBA /* Review.swift */; };
 		DF422D47283D030E001F2EBA /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D46283D030E001F2EBA /* ReviewViewController.swift */; };
 		DF87FD842842452C0019EB82 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF87FD832842452C0019EB82 /* MapViewController.swift */; };
+		DFA1AA0C28450B9E00D9A98C /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA1AA0B28450B9E00D9A98C /* AddScheduleViewController.swift */; };
 		DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */; };
 		DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */; };
 		DFFCB6C12839E62F00B58DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFCB6BF2839E62F00B58DEA /* Main.storyboard */; };
@@ -75,6 +82,9 @@
 		4C903F1F283E688E00038A79 /* TourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourCell.xib; sourceTree = "<group>"; };
 		4C903F21283E6CCC00038A79 /* TourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourCell.swift; sourceTree = "<group>"; };
 		4C90A453283CDA410058DA71 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4C93ABC028451D6800643457 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		4C93ABC228451D7F00643457 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4C93ABCD28451F4F00643457 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4CA881B82843F0A000F13154 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		4CA881BA2843F1CB00F13154 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		4CA881BE2843F7AD00F13154 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
@@ -84,15 +94,15 @@
 		4CE9E490283BD1B900895909 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		4CE9E496283BD29700895909 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		4CE9E498283BD33700895909 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
-		C0649BC3284470BE00B5D018 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C0649BC5284470D500B5D018 /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
 		C0649BC7284470EF00B5D018 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
-		C0649BCD284471E500B5D018 /* AddScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddScheduleViewController.swift; path = ../../../../Trang/TourGuide/TourGuide/AddScheduleViewController.swift; sourceTree = "<group>"; };
-		C0649BD72844C03200B5D018 /* DetailDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDestinationViewController.swift; sourceTree = "<group>"; };
+		C0C05E1528454E100081505F /* DetailDestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDestinationViewController.swift; sourceTree = "<group>"; };
+		C0C05E1728454E570081505F /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = ../../../../Trang/main/TourGuide/TourGuide/Event.swift; sourceTree = "<group>"; };
 		DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		DF422D42283D00A1001F2EBA /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		DF422D46283D030E001F2EBA /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		DF87FD832842452C0019EB82 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DFA1AA0B28450B9E00D9A98C /* AddScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
 		DFFCB6B62839E62F00B58DEA /* TourGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +122,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C93ABC628451F3E00643457 /* FirebaseAnalytics in Frameworks */,
+				4C93ABCC28451F3E00643457 /* FirebaseStorage in Frameworks */,
+				4C93ABC828451F3E00643457 /* FirebaseAuth in Frameworks */,
+				4C93ABCA28451F3E00643457 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +149,7 @@
 		4C6E35C9283A474E003D1D6B /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				C0649BC3284470BE00B5D018 /* Event.swift */,
+				C0C05E1728454E570081505F /* Event.swift */,
 				4CE9E490283BD1B900895909 /* SideMenuModel.swift */,
 				4C6E35CA283A4767003D1D6B /* Tour.swift */,
 				4C427C29283A994F002B2E4F /* Home.swift */,
@@ -209,16 +223,18 @@
 		DFFCB6B82839E62F00B58DEA /* TourGuide */ = {
 			isa = PBXGroup;
 			children = (
+				4C93ABC028451D6800643457 /* SignInViewController.swift */,
+				4C93ABC228451D7F00643457 /* SignUpViewController.swift */,
 				DF87FD832842452C0019EB82 /* MapViewController.swift */,
 				4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */,
+				DFA1AA0B28450B9E00D9A98C /* AddScheduleViewController.swift */,
 				4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */,
-				C0649BCD284471E500B5D018 /* AddScheduleViewController.swift */,
 				4C4B758E2840007300D3E9C4 /* HomeViewController.swift */,
 				DF422D46283D030E001F2EBA /* ReviewViewController.swift */,
 				4C90A453283CDA410058DA71 /* SearchViewController.swift */,
+				C0C05E1528454E100081505F /* DetailDestinationViewController.swift */,
 				4C427C2D283AA278002B2E4F /* ProfileViewController.swift */,
 				C0649BC5284470D500B5D018 /* ScheduleController.swift */,
-				C0649BD72844C03200B5D018 /* DetailDestinationViewController.swift */,
 				4CE9E48E283BCFE200895909 /* MainViewController.swift */,
 				DFFCB6BF2839E62F00B58DEA /* Main.storyboard */,
 				4CA881B12843EF8100F13154 /* database */,
@@ -253,8 +269,9 @@
 				DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */,
 				DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */,
 				DFFCB6C22839E63000B58DEA /* Assets.xcassets */,
-				DFFCB6C72839E63000B58DEA /* Info.plist */,
 				DFFCB6C42839E63000B58DEA /* LaunchScreen.storyboard */,
+				DFFCB6C72839E63000B58DEA /* Info.plist */,
+				4C93ABCD28451F4F00643457 /* GoogleService-Info.plist */,
 			);
 			name = SystemFiles;
 			sourceTree = "<group>";
@@ -275,6 +292,12 @@
 			dependencies = (
 			);
 			name = TourGuide;
+			packageProductDependencies = (
+				4C93ABC528451F3E00643457 /* FirebaseAnalytics */,
+				4C93ABC728451F3E00643457 /* FirebaseAuth */,
+				4C93ABC928451F3E00643457 /* FirebaseFirestore */,
+				4C93ABCB28451F3E00643457 /* FirebaseStorage */,
+			);
 			productName = TourGuide;
 			productReference = DFFCB6B62839E62F00B58DEA /* TourGuide.app */;
 			productType = "com.apple.product-type.application";
@@ -347,6 +370,9 @@
 				Base,
 			);
 			mainGroup = DFFCB6AD2839E62F00B58DEA;
+			packageReferences = (
+				4C93ABC428451F3E00643457 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DFFCB6B72839E62F00B58DEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -369,6 +395,7 @@
 				4CE9E499283BD33700895909 /* SideMenuCell.xib in Resources */,
 				4C903F1A283E604600038A79 /* HomeCell.xib in Resources */,
 				4C903F20283E688E00038A79 /* TourCell.xib in Resources */,
+				4C93ABCE28451F4F00643457 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,12 +420,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C93ABC128451D6800643457 /* SignInViewController.swift in Sources */,
 				4C903F1C283E607000038A79 /* HomeCell.swift in Sources */,
 				4CE9E497283BD29700895909 /* SideMenuCell.swift in Sources */,
 				DF422D47283D030E001F2EBA /* ReviewViewController.swift in Sources */,
+				C0C05E1828454E570081505F /* Event.swift in Sources */,
 				4CA881BB2843F1CB00F13154 /* City.swift in Sources */,
 				4CE9E48F283BCFE200895909 /* MainViewController.swift in Sources */,
-				C0649BD82844C03200B5D018 /* DetailDestinationViewController.swift in Sources */,
 				4C4B758F2840007300D3E9C4 /* HomeViewController.swift in Sources */,
 				4C903F22283E6CCC00038A79 /* TourCell.swift in Sources */,
 				DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */,
@@ -407,10 +435,12 @@
 				DF87FD842842452C0019EB82 /* MapViewController.swift in Sources */,
 				4C427C2A283A994F002B2E4F /* Home.swift in Sources */,
 				4CA881BF2843F7AD00F13154 /* Destination.swift in Sources */,
+				C0C05E1628454E100081505F /* DetailDestinationViewController.swift in Sources */,
 				DF422D3F283D0050001F2EBA /* ReviewTableViewCell.swift in Sources */,
 				4C6E35CB283A4767003D1D6B /* Tour.swift in Sources */,
+				4C93ABC328451D7F00643457 /* SignUpViewController.swift in Sources */,
 				4C427C2E283AA278002B2E4F /* ProfileViewController.swift in Sources */,
-				C0649BCE284471E500B5D018 /* AddScheduleViewController.swift in Sources */,
+				DFA1AA0C28450B9E00D9A98C /* AddScheduleViewController.swift in Sources */,
 				4C90A454283CDA410058DA71 /* SearchViewController.swift in Sources */,
 				4C6E35CF283A48B6003D1D6B /* RatingControl.swift in Sources */,
 				DF422D43283D00A1001F2EBA /* Review.swift in Sources */,
@@ -419,7 +449,6 @@
 				4CA881C12843F83200F13154 /* Position.swift in Sources */,
 				4CA881B92843F0A000F13154 /* Database.swift in Sources */,
 				C0649BC6284470D600B5D018 /* ScheduleController.swift in Sources */,
-				C0649BC4284470BE00B5D018 /* Event.swift in Sources */,
 				C0649BC8284470EF00B5D018 /* ScheduleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -756,6 +785,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C93ABC428451F3E00643457 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C93ABC528451F3E00643457 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C93ABC428451F3E00643457 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		4C93ABC728451F3E00643457 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C93ABC428451F3E00643457 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4C93ABC928451F3E00643457 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C93ABC428451F3E00643457 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		4C93ABCB28451F3E00643457 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C93ABC428451F3E00643457 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DFFCB6AE2839E62F00B58DEA /* Project object */;
 }

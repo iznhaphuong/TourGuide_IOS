@@ -8,14 +8,16 @@
 import UIKit
 
 class Review {
-    var avatar:UIImage?
+    var desID: Int
+    var avatar:UIImage
     var username: String
     var reviewContent:String
     var reviewTime: String
     var ratingValue:Int
     
     //MARK: Constructor
-    init? (username:String, avatar: UIImage?, reviewContent: String, ratingValue:Int, reviewTime: String) {
+    init? (desID: Int, username:String, avatar: UIImage?, reviewContent: String, ratingValue:Int, reviewTime: String) {
+        self.desID = desID
         if username.isEmpty {
             return nil
         }
@@ -23,7 +25,7 @@ class Review {
             return nil
         }
         self.username = username
-        self.avatar = avatar
+        self.avatar = avatar!
         self.reviewContent = reviewContent
         self.reviewTime = reviewTime
         self.ratingValue = ratingValue
