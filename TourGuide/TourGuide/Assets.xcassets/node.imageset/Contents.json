@@ -1,16 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "node-2.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "licensed-image-1.jpeg",
+      "filename" : "node-1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "licensed-image.jpeg",
+      "filename" : "node.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

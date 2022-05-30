@@ -1,0 +1,66 @@
+//
+//  SignInViewController.swift
+//  TourGuide
+//
+//  Created by MinhDuc on 26/05/2022.
+//
+
+import UIKit
+import FirebaseFirestore
+import FirebaseAuth
+
+class SignInViewController: UIViewController {
+    
+    @IBOutlet weak var email: UITextField!
+   
+    @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var password: UITextField!
+    
+    @IBAction func signUp(_ sender: Any) {
+        let signUpViewController =  storyboard?.instantiateViewController(withIdentifier: "signUp") as? SignUpViewController
+        view.window?.rootViewController = signUpViewController
+        view.window?.makeKeyAndVisible()
+    }
+    
+    @IBAction func login(_ sender: Any) {
+        //Validate Text Fields
+
+        //Create cleaned versions of the text field
+        let email = email.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = password.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        //Signing in the user
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if error != nil {
+                //Couldn't sign in
+                print(error!.localizedDescription)
+            }else{
+                let homeViewController =  self.storyboard?.instantiateViewController(withIdentifier: "Home") as? MainViewController
+                self.view.window?.rootViewController = homeViewController
+                self.view.window?.makeKeyAndVisible()
+            }
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        logoImage.layer.cornerRadius = logoImage.frame.size.width/2
+        // Do any additional setup after loading the view.
+//        logoImage.layer.cornerRadius = logoImage.frame.size.width/2
+        
+        password.isSecureTextEntry = true
+        
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
