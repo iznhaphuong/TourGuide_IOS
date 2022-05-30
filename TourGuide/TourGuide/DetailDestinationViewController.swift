@@ -30,6 +30,17 @@ class DetailDestinationViewController: UIViewController   {
     var navigationType:NavigationType = .addEvent;
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .blue
+        navigationController?.navigationBar.barStyle = .black
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        navigationController?.navigationBar.tintColor = UIColor(#colorLiteral(red:12, green:122, blue:255, alpha:1.0))
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
             
         let placeName = "Lăng Bác và Quảng trường Ba Đình"
         let image = UIImage(named: "default")
@@ -75,17 +86,17 @@ class DetailDestinationViewController: UIViewController   {
                 destination = Destination(id: id ?? 0,city_id: cityId ?? 0,name: name ?? "",img: nil,position:position ?? Position(latitude: 0,longitude: 0.0), description: "",ratingValue: 0)
         navigationType = .addEvent
         
-        if let destiController = segue.destination as? AddScheduleViewController {
-            
-            if let destination = destination {
-                destiController.destination = destination
-                    
-            }
-            self.present(UINavigationController(rootViewController: destinationViewController), animated: true, completion: nil)
-
-            
-        destiController.navigationType = .addEvent
-        }
+//        if let destiController = segue.destination as? AddScheduleViewController {
+//            
+//            if let destination = destination {
+//                destiController.destination = destination
+//                    
+//            }
+//            self.present(UINavigationController(rootViewController: destinationViewController), animated: true, completion: nil)
+//
+//            
+//        destiController.navigationType = .addEvent
+//        }
     }
     
 

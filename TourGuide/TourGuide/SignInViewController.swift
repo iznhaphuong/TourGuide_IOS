@@ -44,6 +44,19 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Side Menu
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .blue
+        navigationController?.navigationBar.barStyle = .black
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        navigationController?.navigationBar.tintColor = UIColor(#colorLiteral(red:12, green:122, blue:255, alpha:1.0))
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        
         logoImage.layer.cornerRadius = logoImage.frame.size.width/2
         // Do any additional setup after loading the view.
 //        logoImage.layer.cornerRadius = logoImage.frame.size.width/2

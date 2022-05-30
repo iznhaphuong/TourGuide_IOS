@@ -24,6 +24,17 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Side Menu
+        
+        self.navigationController!.navigationBar.barStyle = .black
+//        self.navigationController!.navigationBar.isTranslucent = false
+        self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        
+        navigationController?.navigationBar.tintColor = .white
+
+        
         // Do any additional setup after loading the view.
         logoImage.layer.cornerRadius = logoImage.frame.size.width/2
         

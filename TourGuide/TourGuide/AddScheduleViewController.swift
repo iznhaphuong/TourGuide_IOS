@@ -31,15 +31,25 @@ class AddScheduleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let borderGrayColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         
-        setBorder(borderGrayColor)
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .blue
+        navigationController?.navigationBar.barStyle = .black
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        navigationController?.navigationBar.tintColor = UIColor(#colorLiteral(red:12, green:122, blue:255, alpha:1.0))
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+
+        
         // Do any additional setup after loading the view.
         //Get event to edit from ScheduleController
         if let event = event{
             
-            print("Ngay dia diem: \(event.date)")
-            print("Thu dia diem: \(event.day)")
+//            print("Ngay dia diem: \(event.date)")
+//            print("Thu dia diem: \(event.day)")
             
             lblPlaceName.text = event.placeName
             pickerDate!.date = event.date
@@ -111,7 +121,7 @@ class AddScheduleViewController: UIViewController {
                                 let time = pickerTime.date
                                 let note = note.text ?? " "
                                 //Luu vao bien thanh phan
-                                event = Event(date: date, day:"", placeName: placeName, time:time, noteEvent: note)
+//                                event = Event(date: date, day:"", placeName: placeName, time:time, noteEvent: note)
             }
         }
         
