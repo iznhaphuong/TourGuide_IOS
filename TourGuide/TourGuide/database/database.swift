@@ -27,34 +27,14 @@ final class Database {
         Destination(id: 1, city_id: 1, name: "Quảng trường Ba Đình", img: UIImage(named: "default"),
                     position: Position(latitude: 10.8, longitude: 106.7),
                     description: "Quảng trường Ba Đình là địa điểm du lịch ở Hà Nội mà các bạn không thể bỏ qua. Nơi đây là trung tâm chính trị của Việt Nam với nhà Quốc hội, Phủ Chủ tịch, Bảo tàng Hồ Chí Minh,…",
-                    listImg: [
-                        UIImage(named: "img-1")!,
-                        UIImage(named: "img-2")!,
-                        UIImage(named: "img-4")!,
-                        UIImage(named: "img-6")!,
-                    ],
                     ratingValue: 5),
         Destination(id: 2, city_id: 1, name: "Hồ Gươm", img: UIImage(named: "default"),
                     position: Position(latitude: 10.8, longitude: 106.7),
                     description: "Hồ Gươm hay hồ Hoàn Kiếm là một trong những nơi nên đến ở Hà Nội khi du lịch thủ đô. Nằm ở giữa trung tâm, Hồ Gươm được ví như trái tim của thành phố ngàn năm tuổi này",
-                    listImg: [
-                        UIImage(named: "img-1")!,
-                        UIImage(named: "img-2")!,
-                        UIImage(named: "img-4")!,
-                        UIImage(named: "img-6")!,
-                        UIImage(named: "img-3")!,
-                        UIImage(named: "img-5")!,
-                        UIImage(named: "img-7")!,
-                    ],
                     ratingValue: 4),
         Destination(id: 3, city_id: 2, name: "Thác Datanla", img: UIImage(named: "default"),
                     position: Position(latitude: 10.8, longitude: 106.7),
                     description: "Thác Datanla nằm giữa đèo Prenn, có độ cao hơn 20m, lại nằm ở thượng nguồn của dòng chảy nên dòng nước lúc nào cũng chảy ổn định và êm đềm. ",
-                    listImg: [
-                        UIImage(named: "img-1")!,
-                        UIImage(named: "img-4")!,
-                        UIImage(named: "img-6")!,
-                    ],
                     ratingValue: 3)
     ]
     
