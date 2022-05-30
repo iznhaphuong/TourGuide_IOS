@@ -10,7 +10,9 @@ import UIKit
 class ReviewViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //datasource
-    private var reviews = [Review]()
+    let desID = 1 //get from detail screen
+    
+    private var reviews : [Review]!
     //MARK: Properties
     @IBOutlet weak var reviewQty: UILabel!
     @IBOutlet weak var reviewTableView: UITableView!
@@ -21,9 +23,13 @@ class ReviewViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var lblNotice: UILabel!
     
     override func viewDidLoad() {
+        //Add dummy data to datasource
+        reviews = Database.getReviews(desID: desID)
+        
         // Side Menu
 //        navigationController?.navigationBar.prefersLargeTitles = true
-
+      
+        
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = .blue
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
@@ -35,15 +41,12 @@ class ReviewViewController: UIViewController, UITableViewDelegate, UITableViewDa
         navigationController?.navigationBar.compactAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         
-        //Add dummy data to datasource
-        let review = Review (username: "admin", avatar: UIImage(named: "default")!, reviewContent: "đây là bình luận", ratingValue: 4, reviewTime: "2/2022")
-        if let review = review {
-//            reviews.append(review)
-            reviews.insert(review, at: 0)
-
-        }
         //Set review quantity
         reviewQty.text = "\(reviews.count) đánh giá"
+        
+        if Database.isReviewed(desID: desID, username: username.text!) {
+            blockReview()
+        }
         super.viewDidLoad()
         
         //Set border to review box
@@ -63,10 +66,12 @@ class ReviewViewController: UIViewController, UITableViewDelegate, UITableViewDa
         formatter.timeStyle = .short
         formatter.dateStyle = .short
         let time = formatter.string(from: currentDateTime)
-        let myReview = Review(username: username.text!, avatar: userAvatar.image, reviewContent: reviewContent.text, ratingValue: reviewRating.getRatingValue(), reviewTime: time)
+        
+        let myReview = Review(desID: self.desID, username: username.text!, avatar: userAvatar.image, reviewContent: reviewContent.text, ratingValue: reviewRating.getRatingValue(), reviewTime: time)
+        
         if let myReview = myReview {
-            print(myReview)
-            reviews.insert(myReview, at: 0)
+            Database.addReview(myReview: myReview)
+            reviews = Database.getReviews(desID: desID)
             //            reviews.append(myReview)
             //Add the new review in table view (at index: 0)
             let newIndexPath = IndexPath(row: 0, section: 0)

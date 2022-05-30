@@ -9,6 +9,14 @@ import Foundation
 import UIKit
 
 final class Database {
+    
+    static var reviews = [
+        Review(desID: 1, username: "adm", avatar:  UIImage(named: "default"), reviewContent: "nhàm chán", ratingValue: 1, reviewTime: "26-06-2021"),
+        Review(desID: 1, username: "carrot.was.bobbing", avatar:  UIImage(named: "default"), reviewContent: "xink dep tuyet voi", ratingValue: 5, reviewTime: "30-5-2022"),
+        Review(desID: 2, username: "carrot.was.bobbing", avatar:  UIImage(named: "default"), reviewContent: "không khí tốt", ratingValue: 4, reviewTime: "30-5-2022"),
+        Review(desID: 1, username: "i.am.bot", avatar:  UIImage(named: "default"), reviewContent: "món ăn ở đây ngon tuyệt", ratingValue: 4, reviewTime: "31-5-2022")
+    ]
+    
     static var cities = [
         City(id: 1, name: "Hà Nội", logo: "default"),
         City(id: 2, name: "Đà Lạt", logo: "default"),
@@ -71,5 +79,38 @@ final class Database {
     
     class func addCity(nameCity:String, logo:String) {
         self.cities.append(City(id: self.cities.count + 1, name: nameCity, logo: logo))
+    }
+    
+    //FOR REVIEW
+    class func getReviews(desID:Int) -> [Review] {
+        var rvs = [Review]()
+        for i in self.reviews {
+            if let rv = i {
+                if rv.desID == desID {
+                    let myreview = rv
+                    rvs.insert(myreview, at: 0)
+
+                }
+            }
+          
+        }
+        return rvs
+    }
+    
+    class func isReviewed (desID:Int, username: String) -> Bool {
+        for i in self.reviews {
+            if let rv = i {
+                if rv.desID == desID && rv.username == username{
+                    return true
+                }
+            }
+            
+        }
+        return false
+    }
+    
+    class func addReview(myReview: Review) {
+//        self.reviews.insert(myReview, at: 0)
+        self.reviews.append(myReview)
     }
 }
