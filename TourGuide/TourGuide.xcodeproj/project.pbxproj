@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C427C28283A98A9002B2E4F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427C27283A98A9002B2E4F /* HomeTableViewController.swift */; };
 		4C427C2A283A994F002B2E4F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427C29283A994F002B2E4F /* Home.swift */; };
 		4C427C2E283AA278002B2E4F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C427C2D283AA278002B2E4F /* ProfileViewController.swift */; };
 		4C4B758F2840007300D3E9C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B758E2840007300D3E9C4 /* HomeViewController.swift */; };
@@ -19,19 +18,23 @@
 		4C903F20283E688E00038A79 /* TourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C903F1F283E688E00038A79 /* TourCell.xib */; };
 		4C903F22283E6CCC00038A79 /* TourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C903F21283E6CCC00038A79 /* TourCell.swift */; };
 		4C90A454283CDA410058DA71 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90A453283CDA410058DA71 /* SearchViewController.swift */; };
+		4CA881B92843F0A000F13154 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA881B82843F0A000F13154 /* Database.swift */; };
+		4CA881BB2843F1CB00F13154 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA881BA2843F1CB00F13154 /* City.swift */; };
+		4CA881BF2843F7AD00F13154 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA881BE2843F7AD00F13154 /* Destination.swift */; };
+		4CA881C12843F83200F13154 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA881C02843F83200F13154 /* Position.swift */; };
 		4CE9E48D283BCFCF00895909 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */; };
 		4CE9E48F283BCFE200895909 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E48E283BCFE200895909 /* MainViewController.swift */; };
 		4CE9E491283BD1B900895909 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E490283BD1B900895909 /* SideMenuModel.swift */; };
 		4CE9E497283BD29700895909 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9E496283BD29700895909 /* SideMenuCell.swift */; };
 		4CE9E499283BD33700895909 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9E498283BD33700895909 /* SideMenuCell.xib */; };
-		C0649BB22843F3C400B5D018 /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BB12843F3C300B5D018 /* AddScheduleViewController.swift */; };
-		C0649BB42843F3D800B5D018 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BB32843F3D800B5D018 /* Event.swift */; };
-		C0649BB62843F3F200B5D018 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BB52843F3F200B5D018 /* ScheduleTableViewCell.swift */; };
-		C0649BB82843F40500B5D018 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BB72843F40400B5D018 /* ScheduleController.swift */; };
+		C0649BC4284470BE00B5D018 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BC3284470BE00B5D018 /* Event.swift */; };
+		C0649BC6284470D600B5D018 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BC5284470D500B5D018 /* ScheduleController.swift */; };
+		C0649BC8284470EF00B5D018 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BC7284470EF00B5D018 /* ScheduleTableViewCell.swift */; };
+		C0649BCE284471E500B5D018 /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BCD284471E500B5D018 /* AddScheduleViewController.swift */; };
 		DF422D3F283D0050001F2EBA /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */; };
-		DF422D41283D0074001F2EBA /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */; };
 		DF422D43283D00A1001F2EBA /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D42283D00A1001F2EBA /* Review.swift */; };
 		DF422D47283D030E001F2EBA /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D46283D030E001F2EBA /* ReviewViewController.swift */; };
+		DF87FD842842452C0019EB82 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF87FD832842452C0019EB82 /* MapViewController.swift */; };
 		DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */; };
 		DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */; };
 		DFFCB6C12839E62F00B58DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFCB6BF2839E62F00B58DEA /* Main.storyboard */; };
@@ -60,7 +63,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C427C27283A98A9002B2E4F /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		4C427C29283A994F002B2E4F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4C427C2D283AA278002B2E4F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4C4B758E2840007300D3E9C4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -72,19 +74,23 @@
 		4C903F1F283E688E00038A79 /* TourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourCell.xib; sourceTree = "<group>"; };
 		4C903F21283E6CCC00038A79 /* TourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourCell.swift; sourceTree = "<group>"; };
 		4C90A453283CDA410058DA71 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4CA881B82843F0A000F13154 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		4CA881BA2843F1CB00F13154 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		4CA881BE2843F7AD00F13154 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		4CA881C02843F83200F13154 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		4CE9E48E283BCFE200895909 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4CE9E490283BD1B900895909 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		4CE9E496283BD29700895909 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		4CE9E498283BD33700895909 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
-		C0649BB12843F3C300B5D018 /* AddScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddScheduleViewController.swift; path = ../../../../Trang/TourGuide/TourGuide/AddScheduleViewController.swift; sourceTree = "<group>"; };
-		C0649BB32843F3D800B5D018 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		C0649BB52843F3F200B5D018 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
-		C0649BB72843F40400B5D018 /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		C0649BC3284470BE00B5D018 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		C0649BC5284470D500B5D018 /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		C0649BC7284470EF00B5D018 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		C0649BCD284471E500B5D018 /* AddScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddScheduleViewController.swift; path = ../../../../Trang/TourGuide/TourGuide/AddScheduleViewController.swift; sourceTree = "<group>"; };
 		DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
-		DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		DF422D42283D00A1001F2EBA /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		DF422D46283D030E001F2EBA /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		DF87FD832842452C0019EB82 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DFFCB6B62839E62F00B58DEA /* TourGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFCB6B92839E62F00B58DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFFCB6BB2839E62F00B58DEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,13 +133,24 @@
 		4C6E35C9283A474E003D1D6B /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				C0649BC3284470BE00B5D018 /* Event.swift */,
 				4CE9E490283BD1B900895909 /* SideMenuModel.swift */,
 				4C6E35CA283A4767003D1D6B /* Tour.swift */,
-				C0649BB32843F3D800B5D018 /* Event.swift */,
 				4C427C29283A994F002B2E4F /* Home.swift */,
 				DF422D42283D00A1001F2EBA /* Review.swift */,
+				4CA881BA2843F1CB00F13154 /* City.swift */,
+				4CA881BE2843F7AD00F13154 /* Destination.swift */,
+				4CA881C02843F83200F13154 /* Position.swift */,
 			);
 			name = DataModels;
+			sourceTree = "<group>";
+		};
+		4CA881B12843EF8100F13154 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				4CA881B82843F0A000F13154 /* Database.swift */,
+			);
+			path = database;
 			sourceTree = "<group>";
 		};
 		4CE9E493283BD1FF00895909 /* Cell */ = {
@@ -159,7 +176,7 @@
 			children = (
 				4CE9E493283BD1FF00895909 /* Cell */,
 				DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */,
-				C0649BB52843F3F200B5D018 /* ScheduleTableViewCell.swift */,
+				C0649BC7284470EF00B5D018 /* ScheduleTableViewCell.swift */,
 				4C903F21283E6CCC00038A79 /* TourCell.swift */,
 				4C903F1B283E607000038A79 /* HomeCell.swift */,
 				4CE9E496283BD29700895909 /* SideMenuCell.swift */,
@@ -190,18 +207,18 @@
 		DFFCB6B82839E62F00B58DEA /* TourGuide */ = {
 			isa = PBXGroup;
 			children = (
-				4C427C27283A98A9002B2E4F /* HomeTableViewController.swift */,
-				C0649BB12843F3C300B5D018 /* AddScheduleViewController.swift */,
-				DF422D40283D0074001F2EBA /* ReviewTableViewController.swift */,
+				DF87FD832842452C0019EB82 /* MapViewController.swift */,
 				4CE9E48C283BCFCF00895909 /* SideMenuViewController.swift */,
 				4C6E35D0283A4986003D1D6B /* TourTableViewController.swift */,
+				C0649BCD284471E500B5D018 /* AddScheduleViewController.swift */,
 				4C4B758E2840007300D3E9C4 /* HomeViewController.swift */,
 				DF422D46283D030E001F2EBA /* ReviewViewController.swift */,
 				4C90A453283CDA410058DA71 /* SearchViewController.swift */,
 				4C427C2D283AA278002B2E4F /* ProfileViewController.swift */,
+				C0649BC5284470D500B5D018 /* ScheduleController.swift */,
 				4CE9E48E283BCFE200895909 /* MainViewController.swift */,
-				C0649BB72843F40400B5D018 /* ScheduleController.swift */,
 				DFFCB6BF2839E62F00B58DEA /* Main.storyboard */,
+				4CA881B12843EF8100F13154 /* database */,
 				DF422D3D283D0035001F2EBA /* CustomCells */,
 				DF422D3C283D0024001F2EBA /* Controls */,
 				4C6E35C9283A474E003D1D6B /* DataModels */,
@@ -373,30 +390,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C427C28283A98A9002B2E4F /* HomeTableViewController.swift in Sources */,
 				4C903F1C283E607000038A79 /* HomeCell.swift in Sources */,
 				4CE9E497283BD29700895909 /* SideMenuCell.swift in Sources */,
 				DF422D47283D030E001F2EBA /* ReviewViewController.swift in Sources */,
+				4CA881BB2843F1CB00F13154 /* City.swift in Sources */,
 				4CE9E48F283BCFE200895909 /* MainViewController.swift in Sources */,
 				4C4B758F2840007300D3E9C4 /* HomeViewController.swift in Sources */,
-				C0649BB62843F3F200B5D018 /* ScheduleTableViewCell.swift in Sources */,
 				4C903F22283E6CCC00038A79 /* TourCell.swift in Sources */,
-				DF422D41283D0074001F2EBA /* ReviewTableViewController.swift in Sources */,
 				DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */,
 				DFFCB6BC2839E62F00B58DEA /* SceneDelegate.swift in Sources */,
-				C0649BB22843F3C400B5D018 /* AddScheduleViewController.swift in Sources */,
 				4CE9E48D283BCFCF00895909 /* SideMenuViewController.swift in Sources */,
-				C0649BB42843F3D800B5D018 /* Event.swift in Sources */,
+				DF87FD842842452C0019EB82 /* MapViewController.swift in Sources */,
 				4C427C2A283A994F002B2E4F /* Home.swift in Sources */,
+				4CA881BF2843F7AD00F13154 /* Destination.swift in Sources */,
 				DF422D3F283D0050001F2EBA /* ReviewTableViewCell.swift in Sources */,
 				4C6E35CB283A4767003D1D6B /* Tour.swift in Sources */,
 				4C427C2E283AA278002B2E4F /* ProfileViewController.swift in Sources */,
+				C0649BCE284471E500B5D018 /* AddScheduleViewController.swift in Sources */,
 				4C90A454283CDA410058DA71 /* SearchViewController.swift in Sources */,
 				4C6E35CF283A48B6003D1D6B /* RatingControl.swift in Sources */,
-				C0649BB82843F40500B5D018 /* ScheduleController.swift in Sources */,
 				DF422D43283D00A1001F2EBA /* Review.swift in Sources */,
 				4C6E35D1283A4986003D1D6B /* TourTableViewController.swift in Sources */,
 				4CE9E491283BD1B900895909 /* SideMenuModel.swift in Sources */,
+				4CA881C12843F83200F13154 /* Position.swift in Sources */,
+				4CA881B92843F0A000F13154 /* Database.swift in Sources */,
+				C0649BC6284470D600B5D018 /* ScheduleController.swift in Sources */,
+				C0649BC4284470BE00B5D018 /* Event.swift in Sources */,
+				C0649BC8284470EF00B5D018 /* ScheduleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

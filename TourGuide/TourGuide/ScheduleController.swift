@@ -15,11 +15,12 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
 //        }()
     
     
+
     @IBOutlet weak var lblMonth: UILabel!
     
-    
     @IBOutlet weak var tableView: UITableView!
-    var date = Date();
+    
+    var date = Date()
     
     //tao navigation type de biet di duong nao hj
     enum NavigationType{
@@ -56,12 +57,12 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
                 events += [event]
             }
             //Add the edit menu button to navigation Bar
+            navigationItem.rightBarButtonItem = editButtonItem
             
             // add the table view to self.view
             self.view.addSubview(tableView)
 
-            // constrain the table view to 120-pts on the top,
-            //  32-pts on left, right and bottom (just to demonstrate size/position)
+            
 
 
             // set delegate and datasource

@@ -16,9 +16,9 @@ class HomeCell: UITableViewCell {
     @IBOutlet weak var imgLogo: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
     
-    func configure(with home: Home) {
-        self.imgLogo.image = home.homeImage
-        self.lblTitle.text = home.homeTitle
+    func configure(with city: City) {
+        self.imgLogo.image = UIImage(named: city.logo)
+        self.lblTitle.text = city.name
     }
     
     override func awakeFromNib() {

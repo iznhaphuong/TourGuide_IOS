@@ -13,7 +13,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tbl: UITableView!
     
     var myIndex = 0
-    var homes = [Home]()
+    var homes = Database.cities
     
     enum NavagationType {
         case home
@@ -24,6 +24,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // Side Menu
+        
+        self.navigationController!.navigationBar.barStyle = .black
+        self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.tintColor = .white
+        sideMenuBtn.target = revealViewController()
+        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
+        
         
         //set both delegate method in ViewDidLoad.
         tbl.delegate = self
@@ -40,25 +50,18 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 //        let myCustomSelectionColorView = UIView()
 //        myCustomSelectionColorView.backgroundColor = .white
 //        self.tableView.backgroundView = myCustomSelectionColorView
-        
-        
-        
-        // Side Menu
-        navigationController?.navigationBar.tintColor = .black
 
-        sideMenuBtn.target = revealViewController()
-        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
 
         // Create
-        let homeImg = UIImage(named: "default")
-        let homeTitle = "Hà Nội"
-        let homeTitle1 = "Da Lat"
-        if let home = Home(homeImage: homeImg, homeTitle: homeTitle) {
-            homes += [home]
-        }
-        if let home = Home(homeImage: homeImg, homeTitle: homeTitle1) {
-            homes += [home]
-        }
+//        let homeImg = UIImage(named: "default")
+//        let homeTitle = "Hà Nội"
+//        let homeTitle1 = "Da Lat"
+//        if let home = Home(homeImage: homeImg, homeTitle: homeTitle) {
+//            homes += [home]
+//        }
+//        if let home = Home(homeImage: homeImg, homeTitle: homeTitle1) {
+//            homes += [home]
+//        }
         
         // register TableView Cell
         self.tbl.register(HomeCell.nib, forCellReuseIdentifier: HomeCell.identifier)
@@ -122,7 +125,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             case "homeTour":
                 if let destinationController = segue.destination as? TourTableViewController {
                     let home = homes[myIndex]
-                    destinationController.data = Tour(tourImage: home.homeImage, tourTitle: home.homeTitle, ratingValue: 4)
+                    destinationController.tours = Database.getTour(id: home.id)
+                    destinationController.idCity = home.id
                 }
                 
             default:

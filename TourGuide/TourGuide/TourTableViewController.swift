@@ -9,8 +9,9 @@ import UIKit
 
 class TourTableViewController: UITableViewController {
     //MARK: Properties
-    var tourists = [Tour]()
-    var tours:[Tour]?
+//    var tourists = [Tour]()
+    var tours:[Tour]!
+    var idCity:Int!
     
 //    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     @IBOutlet var tbl: UITableView!
@@ -22,31 +23,40 @@ class TourTableViewController: UITableViewController {
     
     var navigationType:NavagationType = .tour
     
-    var data:Tour!
+//    var data:Tour!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         
         // Side Menu
-//        navigationController?.navigationBar.tintColor = .black
+//        navigationController?.navigationBar.prefersLargeTitles = true
+
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .blue
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        navigationController?.navigationBar.tintColor = UIColor(#colorLiteral(red:33, green:150, blue:243, alpha:1.0))
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
 
         // Create
-        let tourImage = UIImage(named: "default")
-        let toutTitle = "Ha Noi Rat Dep"
-        let ratingValue = 5
-        let tourTitle1 = "Da Lat Len La Co"
-        let ratingValue1 = 5
-        if let tour = Tour(tourImage: tourImage, tourTitle: toutTitle, ratingValue: ratingValue) {
-            tourists += [tour]
-        }
-        if let tour = Tour(tourImage: tourImage, tourTitle: tourTitle1, ratingValue: ratingValue1) {
-            tourists += [tour]
-        }
-        if data != nil {
-//            tourists += [data]
-            self.title = data.tourTitle
-        }
+//        let tourImage = UIImage(named: "default")
+//        let toutTitle = "Ha Noi Rat Dep"
+//        let ratingValue = 5
+//        let tourTitle1 = "Da Lat Len La Co"
+//        let ratingValue1 = 5
+//        if let tour = Tour(tourImage: tourImage, tourTitle: toutTitle, ratingValue: ratingValue) {
+//            tourists += [tour]
+//        }
+//        if let tour = Tour(tourImage: tourImage, tourTitle: tourTitle1, ratingValue: ratingValue1) {
+//            tourists += [tour]
+//        }
+        
+        self.title = Database.getNameCity(id: idCity)
         
         // register TableView Cell
         self.tbl.register(TourCell.nib, forCellReuseIdentifier: TourCell.identifier)
@@ -65,7 +75,7 @@ class TourTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return tourists.count
+        return tours.count
     }
 
     
@@ -76,7 +86,7 @@ class TourTableViewController: UITableViewController {
 
 //        let reuseCell = "TourTableViewCell"
         if let cell = tableView.dequeueReusableCell(withIdentifier: TourCell.identifier, for: indexPath) as? TourCell {
-            let tour = tourists[indexPath.row]
+            let tour = tours[indexPath.row]
             cell.lblTourTitle.text = tour.tourTitle
             cell.imgTour.image = tour.tourImage
             cell.tourRatingControl.setRatingValue(tour.ratingValue)
@@ -135,7 +145,7 @@ class TourTableViewController: UITableViewController {
                 navigationType = .tour
                 if let destiantionController = segue.destination as? SearchViewController {
                     destiantionController.navigationType = .tour
-                    destiantionController.tourTemplate = tourists
+                    destiantionController.tourTemplate = tours
                 }
                 
             default:
