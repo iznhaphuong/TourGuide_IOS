@@ -8,13 +8,7 @@
 import UIKit
 
 class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-//    let tableView : UITableView = {
-//            let t = UITableView()
-//            t.translatesAutoresizingMaskIntoConstraints = false
-//            return t
-//        }()
-    
-    
+  
 
     @IBOutlet weak var lblMonth: UILabel!
     
@@ -24,13 +18,13 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
     
     //tao navigation type de biet di duong nao hj
     enum NavigationType{
-        case newEvent
+        case addEvent
         case editEvent
     }
     //gan dai 1 gia tri khong tao constructor
-    var navigationType:NavigationType = .newEvent;
+    var navigationType:NavigationType = .addEvent;
    
-    
+    var event:Event?
     var events = [Event]();
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -53,7 +47,7 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
             
             
             //Create the event list for testing
-            if let event = Event(date:date , day:"Thu 5", placeName: "Ho Guom",time:timeChange, noteEvent: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "){
+            if let event = Event(date:date, placeName: "Ho Guom",time:timeChange, noteEvent: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "){
                 events += [event]
             }
             //Add the edit menu button to navigation Bar
@@ -148,9 +142,9 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let segueIdentifier = segue.identifier {
             switch segueIdentifier {
-            case "newEvent":
+            case "addEvent":
                 //                print("New meal")
-                navigationType = .newEvent
+                navigationType = .addEvent
                 //Get the destination controller (lay du lieu man hinh dich)
                 if let destiController = segue.destination as? AddScheduleViewController {
                     //Get the selected meal (lay trong datasrc)
@@ -158,7 +152,7 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
                         destiController.event = events[selectedIndexPath.row]
                     }
                     //Mark the way to meal detail controller
-                    destiController.navigationType = .newEvent
+                    destiController.navigationType = .addEvent
                 }
                 
             case "editEvent":
@@ -186,25 +180,24 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
      2/Truyen mon an qua MH1
      3/Add mon an moi tao vao table view
      */
-    //Definition of unWind from meal detail controller
-    @IBAction func unwindromMealDetailViewController (segue: UIStoryboardSegue) {
+    //Definition of unWind
+    @IBAction func unwindfromiAddScheduleViewController (segue: UIStoryboardSegue) {
         //Get src controller
         //
         if let sourceController = segue.source as? AddScheduleViewController{
-            //Get the new meal from meal detail controller
+            //Get the new event
             if let event = sourceController.event{
                 switch navigationType{
-                case .newEvent:
-                    //Add the new meal into data source
+                case .addEvent:
+                    //Add the new event into data source
                     events += [event]
-                    //Add the new meal in table view
                     let newIndexPath = IndexPath(row:events.count - 1 , section:0)
                     tableView.insertRows(at: [newIndexPath], with: .automatic)
                 case .editEvent:
                     
                     //b1:
                     if let selectedIndexPath = tableView.indexPathForSelectedRow{
-                        //update the edit meal to datasource
+                        //update the edit event to datasource
                         events[selectedIndexPath.row] = event
                         //Reload row at selectedIndexPath
                         tableView.reloadRows(at: [selectedIndexPath], with: .automatic)

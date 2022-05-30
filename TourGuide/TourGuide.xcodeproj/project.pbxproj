@@ -31,6 +31,7 @@
 		C0649BC6284470D600B5D018 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BC5284470D500B5D018 /* ScheduleController.swift */; };
 		C0649BC8284470EF00B5D018 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BC7284470EF00B5D018 /* ScheduleTableViewCell.swift */; };
 		C0649BCE284471E500B5D018 /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BCD284471E500B5D018 /* AddScheduleViewController.swift */; };
+		C0649BD82844C03200B5D018 /* DetailDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0649BD72844C03200B5D018 /* DetailDestinationViewController.swift */; };
 		DF422D3F283D0050001F2EBA /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */; };
 		DF422D43283D00A1001F2EBA /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D42283D00A1001F2EBA /* Review.swift */; };
 		DF422D47283D030E001F2EBA /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF422D46283D030E001F2EBA /* ReviewViewController.swift */; };
@@ -87,6 +88,7 @@
 		C0649BC5284470D500B5D018 /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
 		C0649BC7284470EF00B5D018 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		C0649BCD284471E500B5D018 /* AddScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddScheduleViewController.swift; path = ../../../../Trang/TourGuide/TourGuide/AddScheduleViewController.swift; sourceTree = "<group>"; };
+		C0649BD72844C03200B5D018 /* DetailDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDestinationViewController.swift; sourceTree = "<group>"; };
 		DF422D3E283D0050001F2EBA /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		DF422D42283D00A1001F2EBA /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		DF422D46283D030E001F2EBA /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				4C90A453283CDA410058DA71 /* SearchViewController.swift */,
 				4C427C2D283AA278002B2E4F /* ProfileViewController.swift */,
 				C0649BC5284470D500B5D018 /* ScheduleController.swift */,
+				C0649BD72844C03200B5D018 /* DetailDestinationViewController.swift */,
 				4CE9E48E283BCFE200895909 /* MainViewController.swift */,
 				DFFCB6BF2839E62F00B58DEA /* Main.storyboard */,
 				4CA881B12843EF8100F13154 /* database */,
@@ -395,6 +398,7 @@
 				DF422D47283D030E001F2EBA /* ReviewViewController.swift in Sources */,
 				4CA881BB2843F1CB00F13154 /* City.swift in Sources */,
 				4CE9E48F283BCFE200895909 /* MainViewController.swift in Sources */,
+				C0649BD82844C03200B5D018 /* DetailDestinationViewController.swift in Sources */,
 				4C4B758F2840007300D3E9C4 /* HomeViewController.swift in Sources */,
 				4C903F22283E6CCC00038A79 /* TourCell.swift in Sources */,
 				DFFCB6BA2839E62F00B58DEA /* AppDelegate.swift in Sources */,
