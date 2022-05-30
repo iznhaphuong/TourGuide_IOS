@@ -34,7 +34,6 @@ class SideMenuViewController: UIViewController {
             SideMenuModel(title: "Màn hình chính"),
             SideMenuModel(title: "Hồ sơ cá nhân"),
             SideMenuModel(title: "Lịch trình"),
-            SideMenuModel(title: "Đăng xuất")
         ]
         
         // TableView

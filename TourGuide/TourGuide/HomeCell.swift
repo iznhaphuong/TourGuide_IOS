@@ -7,19 +7,26 @@
 
 import UIKit
 
+
 class HomeCell: UITableViewCell {
+    
     class var identifier: String { return String(describing: self) }
     class var nib: UINib { return UINib(nibName: identifier, bundle: nil) }
     
     @IBOutlet weak var imgLogo: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
     
+    func configure(with city: City) {
+        self.imgLogo.image = UIImage(named: city.logo)
+        self.lblTitle.text = city.name
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
         // Background
-        self.backgroundColor = .clear
+//        self.backgroundColor = .clear
         
         // img
         self.imgLogo.layer.cornerRadius = self.imgLogo.frame.height / 2
@@ -33,6 +40,10 @@ class HomeCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        if selected {
+            
+            
+        }
     }
 
 }

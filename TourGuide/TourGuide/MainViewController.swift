@@ -37,6 +37,7 @@ class MainViewController: UIViewController {
         tapGestureRecognizer.numberOfTapsRequired = 1
         tapGestureRecognizer.delegate = self
         view.addGestureRecognizer(tapGestureRecognizer)
+        
         if self.revealSideMenuOnTop {
             view.insertSubview(self.sideMenuShadowView, at: 1)
         }
@@ -141,9 +142,6 @@ extension MainViewController: SideMenuViewControllerDelegate {
         case 2:
             // shedule
             self.showViewController(viewController: UINavigationController.self, storyboardId: "scheduleNavID")
-        case 3:
-            // Logout
-            self.showViewController(viewController: UINavigationController.self, storyboardId: "LogoutNavID")
         default:
             break
         }

@@ -27,8 +27,11 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
         logoImage.layer.cornerRadius = logoImage.frame.size.width/2
         
+        password.isSecureTextEntry = true
+        repassword.isSecureTextEntry = true
+        
     }
-    		
+            
     /*
     // MARK: - Navigation
 

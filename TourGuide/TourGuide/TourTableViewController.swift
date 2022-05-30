@@ -9,29 +9,58 @@ import UIKit
 
 class TourTableViewController: UITableViewController {
     //MARK: Properties
-    var tourists = [Tour]()
-    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
+//    var tourists = [Tour]()
+    var tours:[Tour]!
+    var idCity:Int!
+    
+//    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     @IBOutlet var tbl: UITableView!
+    
+    enum NavagationType {
+        case home
+        case tour
+    }
+    
+    var navigationType:NavagationType = .tour
+    
+//    var data:Tour!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
         // Side Menu
-        navigationController?.navigationBar.tintColor = .black
+//        navigationController?.navigationBar.prefersLargeTitles = true
 
-        sideMenuBtn.target = revealViewController()
-        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .blue
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        navigationController?.navigationBar.tintColor = UIColor(#colorLiteral(red:33, green:150, blue:243, alpha:1.0))
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
 
         // Create
-        let tourImage = UIImage(named: "default")
-        let toutTitle = "Ha Noi Rat Dep"
-        let ratingValue = 5
-        if let tour = Tour(tourImage: tourImage, tourTitle: toutTitle, ratingValue: ratingValue) {
-            tourists += [tour]
-        }
+//        let tourImage = UIImage(named: "default")
+//        let toutTitle = "Ha Noi Rat Dep"
+//        let ratingValue = 5
+//        let tourTitle1 = "Da Lat Len La Co"
+//        let ratingValue1 = 5
+//        if let tour = Tour(tourImage: tourImage, tourTitle: toutTitle, ratingValue: ratingValue) {
+//            tourists += [tour]
+//        }
+//        if let tour = Tour(tourImage: tourImage, tourTitle: tourTitle1, ratingValue: ratingValue1) {
+//            tourists += [tour]
+//        }
+        
+        self.title = Database.getNameCity(id: idCity)
         
         // register TableView Cell
         self.tbl.register(TourCell.nib, forCellReuseIdentifier: TourCell.identifier)
+        
         
         // Update TableView with the data
         self.tbl.reloadData()
@@ -46,22 +75,21 @@ class TourTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return tourists.count
+        return tours.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
 
 //        let reuseCell = "TourTableViewCell"
         if let cell = tableView.dequeueReusableCell(withIdentifier: TourCell.identifier, for: indexPath) as? TourCell {
-            let tour = tourists[indexPath.row]
+            let tour = tours[indexPath.row]
             cell.lblTourTitle.text = tour.tourTitle
             cell.imgTour.image = tour.tourImage
             cell.tourRatingControl.setRatingValue(tour.ratingValue)
-            
             return cell
             
         } else {
@@ -105,14 +133,24 @@ class TourTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let segueIdentifier = segue.identifier {
+            switch segueIdentifier {
+            case "tour":
+                print("Chuyen man hinh tour1")
+                navigationType = .tour
+                if let destiantionController = segue.destination as? SearchViewController {
+                    destiantionController.navigationType = .tour
+                    destiantionController.tourTemplate = tours
+                }
+                
+            default:
+                break
+            }
+        }
     }
-    */
-
 }

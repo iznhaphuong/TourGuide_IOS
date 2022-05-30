@@ -12,11 +12,22 @@ class HomeTableViewController: UITableViewController {
     @IBOutlet var sideMenuBtn: UIBarButtonItem!
     @IBOutlet var tbl: UITableView!
     
+    var myIndex = 0
+    var homes = [City]()
     
-    var homes = [Home]()
+    enum NavagationType {
+        case home
+        case tour
+    }
+    
+    var navigationType:NavagationType = .home
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // tat cu chi
+        self.sideMenuBtn.target = revealViewController()
+        self.sideMenuBtn.action = #selector(self.revealViewController()?.revealSideMenu)
         
         //color background
         self.tableView.backgroundColor = UIColor(#colorLiteral(red:0.3, green:0.68, blue:0.97, alpha:1.0))
@@ -33,11 +44,15 @@ class HomeTableViewController: UITableViewController {
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
 
         // Create
-        let homeImg = UIImage(named: "default")
-        let homeTitle = "Hà Nội"
-        if let home = Home(homeImage: homeImg, homeTitle: homeTitle) {
-            homes += [home]
-        }
+//        let homeImg = UIImage(named: "default")
+//        let homeTitle = "Hà Nội"
+//        let homeTitle1 = "Da Lat"
+//        if let home = Home(homeImage: homeImg, homeTitle: homeTitle) {
+//            homes += [home]
+//        }
+//        if let home = Home(homeImage: homeImg, homeTitle: homeTitle1) {
+//            homes += [home]
+//        }
         
         // register TableView Cell
         self.tbl.register(HomeCell.nib, forCellReuseIdentifier: HomeCell.identifier)
@@ -64,16 +79,22 @@ class HomeTableViewController: UITableViewController {
         //let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-//        let reuseCell = "HomeTableViewCell"
+//        let reuseCell = "HomeCell"
         if let cell = tableView.dequeueReusableCell(withIdentifier: HomeCell.identifier, for: indexPath) as? HomeCell {
             let home = homes[indexPath.row]
-            cell.lblTitle.text = home.homeTitle
-            cell.imgLogo.image = home.homeImage
+           cell.configure(with: home)
+            
             return cell
             
         } else {
             fatalError("Can not create the cell")
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row
+        tbl.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "homeTour", sender: self)
     }
     
 
@@ -112,14 +133,31 @@ class HomeTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        if let segueIdentifier = segue.identifier {
+            switch segueIdentifier {
+            case "home":
+                navigationType = .home
+                if let destiantionController = segue.destination as? SearchViewController {
+                    destiantionController.navigationType = .home
+                    destiantionController.homeTemplate = homes
+                }
+            case "homeTour":
+                if let destinationController = segue.destination as? TourTableViewController {
+                    let home = homes[myIndex]
+                    destinationController.tours = Database.getTour(id: home.id)
+                    destinationController.idCity = home.id
+                }
+                
+            default:
+                break
+            }
+        }
     }
-    */
 
 }
