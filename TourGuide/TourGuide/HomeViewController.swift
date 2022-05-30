@@ -31,6 +31,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.navigationController!.navigationBar.barStyle = .black
         self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.tintColor = .white
+        
+        //
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
         

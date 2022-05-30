@@ -12,6 +12,7 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
 
     @IBOutlet weak var lblMonth: UILabel!
     
+    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
     var date = Date()
@@ -28,6 +29,10 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
     var events = [Event]();
         override func viewDidLoad() {
             super.viewDidLoad()
+            
+            //
+            sideMenuBtn.target = revealViewController()
+            sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
             
             let appearance = UINavigationBarAppearance()
             appearance.backgroundColor = .blue

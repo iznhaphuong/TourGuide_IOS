@@ -34,6 +34,7 @@ class SideMenuViewController: UIViewController {
             SideMenuModel(title: "Màn hình chính"),
             SideMenuModel(title: "Hồ sơ cá nhân"),
             SideMenuModel(title: "Lịch trình"),
+            SideMenuModel(title: "Thoát")
         ]
         
         // TableView
@@ -96,9 +97,9 @@ extension SideMenuViewController: UITableViewDataSource {
         self.delegate?.selectedCell(indexPath.row)
         
         // Remove highlighted color when you press the 'Profile' and 'Like us on facebook' cell
-//        if indexPath.row == 1 {
-//            tableView.deselectRow(at: indexPath, animated: true)
-//        }
+        if indexPath.row == 3 {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
 
 }

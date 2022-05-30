@@ -7,6 +7,7 @@
 
 import SafariServices
 import UIKit
+import FirebaseAuth
 
 class MainViewController: UIViewController {
     //MARK: Properties
@@ -34,7 +35,7 @@ class MainViewController: UIViewController {
         self.sideMenuShadowView.backgroundColor = .black
         self.sideMenuShadowView.alpha = 0.0
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TapGestureRecognizer))
-        tapGestureRecognizer.numberOfTapsRequired = 1
+        tapGestureRecognizer.numberOfTapsRequired = 0
         tapGestureRecognizer.delegate = self
         view.addGestureRecognizer(tapGestureRecognizer)
         
@@ -141,7 +142,11 @@ extension MainViewController: SideMenuViewControllerDelegate {
             self.showViewController(viewController: UINavigationController.self, storyboardId: "ProfileNavID")
         case 2:
             // shedule
-            self.showViewController(viewController: UINavigationController.self, storyboardId: "scheduleNavID")
+            self.showViewController(viewController: UINavigationController.self, storyboardId: "ScheduleNavID")
+        case 3:
+            // logout
+            
+            self.showViewController(viewController: UINavigationController.self, storyboardId: "LogoutNavID")
         default:
             break
         }
