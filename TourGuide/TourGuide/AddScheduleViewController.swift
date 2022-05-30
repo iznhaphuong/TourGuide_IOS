@@ -9,30 +9,45 @@ import UIKit
 
 class AddScheduleViewController: UIViewController {
     
+    //MARK:Properties
     @IBOutlet weak var note: UITextView!
     
+    @IBOutlet weak var pickerDate: UIDatePicker!
+    
+    @IBOutlet weak var lblPlaceName: UITextField!
+    @IBOutlet weak var btnDone: UIButton!
+    @IBOutlet weak var pickerTime: UIDatePicker!
     @IBOutlet weak var cancelButton: UIButton!
+    var event:Event?
+    
+    //tao navigation type de biet di duong nao hj
+    enum NavigationType{
+        case newEvent
+        case editEvent
+    }
+    //gan dai 1 gia tri khong tao constructor
+    var navigationType:NavigationType = .newEvent;
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Side Menu
-//        navigationController?.navigationBar.prefersLargeTitles = true
-
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .blue
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-
-        navigationController?.navigationBar.tintColor = UIColor(#colorLiteral(red:33, green:150, blue:243, alpha:1.0))
-        navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.compactAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-        
         let borderGrayColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         
         setBorder(borderGrayColor)
         // Do any additional setup after loading the view.
+        //Get event to edit from ScheduleController
+        if let event = event{
+            
+            print("Ngay dia diem: \(event.date)")
+            print("Thu dia diem: \(event.day)")
+            
+            lblPlaceName.text = event.placeName
+            pickerDate!.date = event.date
+            pickerTime.date = event.time
+            note.text = event.noteEvent
+            
+        }
     }
     
     func setBorder(_ borderGrayColor : UIColor) {
@@ -54,4 +69,52 @@ class AddScheduleViewController: UIViewController {
      }
      */
     
+    @IBAction func Cancel(_ sender: UIButton) {
+        print("btncancel")
+        switch navigationType {
+            
+        case .newEvent:
+            dismiss(animated: true, completion: nil)
+        case .editEvent:
+            //Get the navigation controller and pop the view from stack
+            if let navigationController = navigationController {
+                navigationController.popViewController(animated: true)
+            }
+            
+        }
+    }
+    
+    //    @IBAction func Cancel(_ sender: UIBarButtonItem) {
+    //        print("btn cancel is tapped")
+    //        switch navigationType {
+    //
+    //        case .newEvent:
+    //            dismiss(animated: true, completion: nil)
+    //        case .editEvent:
+    //            //Get the navigation controller and pop the view from stack
+    //            if let navigationController = navigationController {
+    //        navigationController.popViewController(animated: true)
+    //            }
+    //
+    //        }
+    //
+    //    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //        Sender de nhan dang duong di
+        if let btnSender = sender as? UIButton {
+            if btnSender === btnDone {
+                print("btnDone is taped")
+                //                Create the new meal
+                //                if a = b ?? c
+                                let date = pickerDate.date
+                                let placeName = lblPlaceName.text!
+                //                let day = event.day?
+                                let time = pickerTime.date
+                                let note = note.text ?? " "
+                                //Luu vao bien thanh phan
+                                event = Event(date: date, day:"", placeName: placeName, time:time, noteEvent: note)
+            }
+        }
+        
+    }
 }
