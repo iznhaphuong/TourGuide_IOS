@@ -47,22 +47,18 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
 
 
             // set a background color so we can easily see the table
+
+            var date = Date()
             let dateFormatter = DateFormatter()
             dateFormatter.dateStyle = .long
             dateFormatter.timeStyle = .none
             let month = dateFormatter.string(from: self.date)
-            let splitMonth = month.components(separatedBy:["/"," "])
-   
-//            lblMonth.text = splitMonth[2] + " " + splitMonth[3] + splitMonth[4]
-                    
-                
+            let splitMonth = month.components(separatedBy:["/"," "])               
             // create time format
             dateFormatter.dateFormat =  "HH:mm"
             // time data
             let timeChange = dateFormatter.date(from: "17:00")!
-            print("ay \(timeChange)")
-            
-            
+            print("ay \(timeChange)")           
             //Create the event list for testing
             if let event = Event(date:date, placeName: "Ho Guom",time:timeChange, noteEvent: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "){
                 events += [event]
@@ -72,9 +68,6 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
             
             // add the table view to self.view
             self.view.addSubview(tableView)
-
-            
-
 
             // set delegate and datasource
             tableView.delegate = self
@@ -191,12 +184,6 @@ class ScheduleController: UIViewController,UITableViewDelegate, UITableViewDataS
         }
     }
     
-    
-    /*
-     1/ Luu lai mon an do nguoi dung tao
-     2/Truyen mon an qua MH1
-     3/Add mon an moi tao vao table view
-     */
     //Definition of unWind
     @IBAction func unwindfromiAddScheduleViewController (segue: UIStoryboardSegue) {
         //Get src controller

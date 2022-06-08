@@ -19,12 +19,11 @@ class AddScheduleViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     var event:Event?
     
-    //tao navigation type de biet di duong nao hj
     enum NavigationType{
         case newEvent
         case editEvent
     }
-    //gan dai 1 gia tri khong tao constructor
+
     var navigationType:NavigationType = .newEvent;
     
     
@@ -47,9 +46,6 @@ class AddScheduleViewController: UIViewController {
         // Do any additional setup after loading the view.
         //Get event to edit from ScheduleController
         if let event = event{
-            
-//            print("Ngay dia diem: \(event.date)")
-//            print("Thu dia diem: \(event.day)")
             
             lblPlaceName.text = event.placeName
             pickerDate!.date = event.date
@@ -121,7 +117,7 @@ class AddScheduleViewController: UIViewController {
                                 let time = pickerTime.date
                                 let note = note.text ?? " "
                                 //Luu vao bien thanh phan
-//                                event = Event(date: date, day:"", placeName: placeName, time:time, noteEvent: note)
+                               event = Event(date: date, day:"", placeName: placeName, time:time, noteEvent: note)
             }
         }
         

@@ -12,11 +12,7 @@ class Event{
      var placeName:String;
     var time = Date();
     var noteEvent:String?;
-    
-    
-    
     //MARK:Constructors
-//    constructor co the tao duoc hoac khong tao duoc tu nhung bien truyen vao
     init?( date:Date,
      placeName:String,
     time:Date,
